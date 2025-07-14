@@ -1,5 +1,6 @@
 import { ChevronDown, Users, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -55,9 +56,11 @@ const Index = () => {
               <Users className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               I'm an NRI
             </Button>
-            <Button variant="brand-outline" size="lg" className="group">
-              <Building2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              I'm an Enterprise
+            <Button variant="brand-outline" size="lg" className="group" asChild>
+              <Link to="/enterprise">
+                <Building2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                I'm an Enterprise
+              </Link>
             </Button>
           </div>
         </div>
