@@ -79,7 +79,7 @@ export default {
 				'glow': 'var(--shadow-glow)'
 			},
 			fontFamily: {
-				'script': ['Dancing Script', 'cursive'],
+				'script': ['Lobster', 'cursive'],
 				'sans': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
