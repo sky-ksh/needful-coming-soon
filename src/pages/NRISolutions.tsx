@@ -110,10 +110,8 @@ const NRISolutions = () => {
 
           <Card className="border-0 shadow-2xl bg-background/80 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-center">Get Started Today</CardTitle>
-              <CardDescription className="text-center">
-                Fill out the form below and we'll connect you with the right partner
-              </CardDescription>
+              
+              
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
