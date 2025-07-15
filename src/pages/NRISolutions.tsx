@@ -8,7 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { Globe, FileText, CreditCard, Building2, ArrowRight, Check, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const NRISolutions = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,45 +16,51 @@ const NRISolutions = () => {
     service: "",
     description: ""
   });
-  const { toast } = useToast();
-
-  const services = [
-    { value: "oci", label: "OCI Application" },
-    { value: "pan", label: "PAN Card" },
-    { value: "nri-account", label: "NRI Account Opening" },
-    { value: "other", label: "I need help with something else" }
-  ];
-
+  const {
+    toast
+  } = useToast();
+  const services = [{
+    value: "oci",
+    label: "OCI Application"
+  }, {
+    value: "pan",
+    label: "PAN Card"
+  }, {
+    value: "nri-account",
+    label: "NRI Account Opening"
+  }, {
+    value: "other",
+    label: "I need help with something else"
+  }];
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     toast({
       title: "Successfully joined the community!",
-      description: "We'll be in touch soon to help with your requirements.",
+      description: "We'll be in touch soon to help with your requirements."
     });
-    setFormData({ name: "", email: "", phone: "", service: "", description: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      description: ""
+    });
   };
-
-  const features = [
-    {
-      icon: FileText,
-      title: "OCI Application",
-      description: "Complete assistance with Overseas Citizen of India applications and documentation"
-    },
-    {
-      icon: CreditCard,
-      title: "PAN Card Services",
-      description: "Quick and hassle-free PAN card applications and updates for NRIs"
-    },
-    {
-      icon: Building2,
-      title: "NRI Account Opening",
-      description: "Seamless bank account opening with our trusted banking partners"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
+  const features = [{
+    icon: FileText,
+    title: "OCI Application",
+    description: "Complete assistance with Overseas Citizen of India applications and documentation"
+  }, {
+    icon: CreditCard,
+    title: "PAN Card Services",
+    description: "Quick and hassle-free PAN card applications and updates for NRIs"
+  }, {
+    icon: Building2,
+    title: "NRI Account Opening",
+    description: "Seamless bank account opening with our trusted banking partners"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       {/* Header */}
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -100,9 +105,7 @@ const NRISolutions = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Join Our Community
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Be the first to access our platform and get help with your Indian service needs
-            </p>
+            <p className="text-lg text-muted-foreground">Be the first to access our platform once it's ready. In the meantime, reach out for white-glove support to get things done in India.</p>
           </div>
 
           <Card className="border-0 shadow-2xl bg-background/80 backdrop-blur-sm">
@@ -117,70 +120,52 @@ const NRISolutions = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                      placeholder="Enter your full name"
-                    />
+                    <Input id="name" value={formData.name} onChange={e => setFormData({
+                    ...formData,
+                    name: e.target.value
+                  })} required placeholder="Enter your full name" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                      placeholder="Enter your email"
-                    />
+                    <Input id="email" type="email" value={formData.email} onChange={e => setFormData({
+                    ...formData,
+                    email: e.target.value
+                  })} required placeholder="Enter your email" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="Enter your phone number"
-                  />
+                  <Input id="phone" type="tel" value={formData.phone} onChange={e => setFormData({
+                  ...formData,
+                  phone: e.target.value
+                })} placeholder="Enter your phone number" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="service">What do you need help with? *</Label>
-                  <Select
-                    value={formData.service}
-                    onValueChange={(value) => setFormData({ ...formData, service: value })}
-                    required
-                  >
+                  <Select value={formData.service} onValueChange={value => setFormData({
+                  ...formData,
+                  service: value
+                })} required>
                     <SelectTrigger>
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
-                      {services.map((service) => (
-                        <SelectItem key={service.value} value={service.value}>
+                      {services.map(service => <SelectItem key={service.value} value={service.value}>
                           {service.label}
-                        </SelectItem>
-                      ))}
+                        </SelectItem>)}
                     </SelectContent>
                   </Select>
                 </div>
 
-                {formData.service === "other" && (
-                  <div className="space-y-2">
+                {formData.service === "other" && <div className="space-y-2">
                     <Label htmlFor="description">Please describe what you need help with</Label>
-                    <Textarea
-                      id="description"
-                      value={formData.description}
-                      onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                      placeholder="Tell us more about your requirements..."
-                      rows={4}
-                    />
-                  </div>
-                )}
+                    <Textarea id="description" value={formData.description} onChange={e => setFormData({
+                  ...formData,
+                  description: e.target.value
+                })} placeholder="Tell us more about your requirements..." rows={4} />
+                  </div>}
 
                 <Button type="submit" className="w-full" size="lg">
                   Join Community
@@ -205,8 +190,7 @@ const NRISolutions = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm">
+            {features.map((feature, index) => <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm">
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-8 h-8 text-brand-purple" />
@@ -216,8 +200,7 @@ const NRISolutions = () => {
                 <CardContent>
                   <p className="text-muted-foreground text-center">{feature.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -230,8 +213,6 @@ const NRISolutions = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default NRISolutions;
