@@ -24,7 +24,7 @@ const Enterprise = () => {
           <div className="space-y-8">
             {/* Logo */}
             <div className="mb-12 py-8 overflow-visible">
-              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal leading-normal bg-gradient-to-r from-[hsl(230,45%,25%)] to-[hsl(280,70%,60%)] bg-clip-text text-transparent">
+              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal leading-normal bg-gradient-to-r from-[#2A2A5B] to-[#8B5CF6] bg-clip-text text-transparent" style={{ overflow: 'visible' }}>
                 Needful
               </h1>
             </div>
