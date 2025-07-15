@@ -19,7 +19,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-6 text-center">
           {/* Logo */}
           <div className="mb-16 animate-fade-in py-8 overflow-visible">
-            <h1 className="font-script text-8xl md:text-9xl lg:text-[12rem] font-normal text-brand-purple leading-normal">
+            <h1 className="font-script text-8xl md:text-9xl lg:text-[12rem] font-normal bg-gradient-brand bg-clip-text text-transparent leading-normal">
               Needful
             </h1>
           </div>
@@ -28,7 +28,7 @@ const Index = () => {
           <div className="animate-fade-in" style={{
           animationDelay: '0.2s'
         }}>
-            <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-relaxed font-sans">
+            <p className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground/80 leading-relaxed font-sans">
               Access India. Simply and Securely.
             </p>
           </div>
