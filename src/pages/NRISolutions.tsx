@@ -6,7 +6,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Globe, FileText, CreditCard, Building2, ArrowRight, Check } from "lucide-react";
+import { Globe, FileText, CreditCard, Building2, ArrowRight, Check, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NRISolutions = () => {
   const [formData, setFormData] = useState({
@@ -59,10 +60,15 @@ const NRISolutions = () => {
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-brand-purple">IndiaAccess</div>
-            <Button variant="outline" size="sm">
-              Sign In
+            <Button variant="ghost" size="sm" className="flex items-center gap-2 text-brand-purple hover:text-brand-purple/80" asChild>
+              <Link to="/">
+                <ArrowLeft className="w-4 h-4" />
+                Back to Home
+              </Link>
             </Button>
+            <div className="text-2xl font-bold text-brand-purple">
+              NRI Solutions
+            </div>
           </div>
         </div>
       </header>
@@ -224,7 +230,6 @@ const NRISolutions = () => {
       {/* Footer */}
       <footer className="border-t bg-muted/30 py-12 px-4">
         <div className="container mx-auto text-center">
-          <div className="text-2xl font-bold text-brand-purple mb-4">IndiaAccess</div>
           <p className="text-muted-foreground">
             Simplifying access to Indian services for NRIs worldwide
           </p>
