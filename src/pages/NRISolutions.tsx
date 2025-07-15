@@ -166,7 +166,7 @@ const NRISolutions = () => {
                   </div>}
 
                 <Button type="submit" className="w-full" size="lg">
-                  Join Community
+                  Join the Needful Community
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </form>
