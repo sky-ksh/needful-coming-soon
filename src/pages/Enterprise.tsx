@@ -23,8 +23,8 @@ const Enterprise = () => {
           {/* Left side - Hero Text */}
           <div className="space-y-8">
             {/* Logo */}
-            <div className="mb-12">
-              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal bg-gradient-brand bg-clip-text text-transparent leading-relaxed">
+            <div className="mb-12 py-4 overflow-visible">
+              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal bg-gradient-brand bg-clip-text text-transparent leading-normal px-4">
                 Needful
               </h1>
             </div>
