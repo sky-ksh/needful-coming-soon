@@ -116,10 +116,6 @@ const Enterprise = () => {
                   >
                     Get Your Free Consultation
                   </Button>
-                  
-                  <p className="text-xs text-muted-foreground text-center">
-                    By submitting this form, you agree to our privacy policy and terms of service.
-                  </p>
                 </form>
               </CardContent>
             </Card>
