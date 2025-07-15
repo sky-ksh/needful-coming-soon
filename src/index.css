@@ -46,6 +46,7 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-brand: linear-gradient(135deg, hsl(var(--brand-purple-dark)), hsl(var(--brand-purple)), hsl(var(--brand-purple-light)));
     --gradient-background: linear-gradient(180deg, hsl(280 30% 98%), hsl(280 20% 96%));
+    --gradient-logo: linear-gradient(135deg, hsl(230 45% 25%), hsl(280 70% 60%));
     
     /* Shadows and Effects */
     --shadow-brand: 0 20px 60px -10px hsl(var(--brand-purple) / 0.3);
