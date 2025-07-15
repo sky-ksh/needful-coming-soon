@@ -24,7 +24,7 @@ const Enterprise = () => {
           <div className="space-y-8">
             {/* Logo */}
             <div className="mb-12">
-              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal bg-gradient-brand bg-clip-text text-transparent leading-tight">
+              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal bg-gradient-brand bg-clip-text text-transparent leading-relaxed">
                 Needful
               </h1>
             </div>
