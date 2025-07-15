@@ -46,11 +46,11 @@ const Index = () => {
 
       {/* Description Section */}
       <div id="description" className="min-h-screen flex items-center justify-center bg-gradient-background">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto px-6">
           {/* Description */}
           <div className="mb-12 animate-fade-in">
             <div className="max-w-4xl mx-auto">
-              <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed text-left">
                 Founded by a team of Indian immigrant students and professors at MIT, Needful is an agentic AI platform that automates India's most painful manual processes to unlock growth for NRIs (Non-Resident Indians) and NRI-facing businesses.
               </p>
             </div>
@@ -60,7 +60,7 @@ const Index = () => {
           <div className="mb-16 animate-fade-in" style={{
           animationDelay: '0.1s'
         }}>
-            <p className="text-lg md:text-xl text-foreground/80 text-center">We're building! Learn more about our solutions below:</p>
+            <p className="text-lg md:text-xl text-foreground/80 text-left max-w-4xl mx-auto">We're building! Learn more about our solutions below:</p>
           </div>
 
           {/* CTA Buttons */}
