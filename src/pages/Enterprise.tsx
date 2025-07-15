@@ -23,8 +23,8 @@ const Enterprise = () => {
           {/* Left side - Hero Text */}
           <div className="space-y-8">
             {/* Logo */}
-            <div className="mb-12 py-8 overflow-visible">
-              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal leading-normal bg-gradient-to-r from-[#2A2A5B] to-[#8B5CF6] bg-clip-text text-transparent" style={{ overflow: 'visible' }}>
+            <div className="mb-12 py-8 px-4 overflow-visible">
+              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal leading-normal bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent whitespace-nowrap">
                 Needful
               </h1>
             </div>
