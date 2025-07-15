@@ -52,9 +52,11 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <Button variant="brand" size="lg" className="group">
-              <Users className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              NRI Solutions
+            <Button variant="brand" size="lg" className="group" asChild>
+              <Link to="/nri-solutions">
+                <Users className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                NRI Solutions
+              </Link>
             </Button>
             <Button variant="brand-outline" size="lg" className="group" asChild>
               <Link to="/enterprise">
