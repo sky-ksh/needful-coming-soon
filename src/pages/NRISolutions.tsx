@@ -75,22 +75,17 @@ const NRISolutions = () => {
 
       {/* Hero Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto text-center max-w-4xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-brand-purple/10 text-brand-purple px-4 py-2 rounded-full text-sm font-medium mb-8">
-              <Globe className="w-4 h-4" />
-              For Non-Resident Indians
-            </div>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple mb-6 py-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple mb-6 py-8 text-left">
               NRI Solutions
             </h1>
             
-            <p className="text-2xl md:text-3xl font-semibold text-foreground/90 leading-relaxed font-sans mb-8">
+            <p className="text-2xl md:text-3xl font-semibold text-foreground/90 leading-relaxed font-sans mb-8 text-left">
               Your gateway to Indian services. Simplified for NRIs worldwide.
             </p>
             
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
+            <p className="text-lg text-muted-foreground max-w-2xl mb-12 text-left">
               Whether you need help with official documentation, banking, or navigating Indian bureaucracy, 
               our platform connects you with trusted partners to get things done.
             </p>
