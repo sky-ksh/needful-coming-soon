@@ -30,7 +30,7 @@ const NRISolutions = () => {
     e.preventDefault();
     // Handle form submission
     toast({
-      title: "Successfully joined the waitlist!",
+      title: "Successfully joined the community!",
       description: "We'll be in touch soon to help with your requirements.",
     });
     setFormData({ name: "", email: "", phone: "", service: "", description: "" });
@@ -98,42 +98,12 @@ const NRISolutions = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Services We Offer
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Immediate assistance available through our partner network
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm">
-                <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-8 h-8 text-brand-purple" />
-                  </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-center">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Waitlist Form Section */}
+      {/* Community Form Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Join Our Waitlist
+              Join Our Community
             </h2>
             <p className="text-lg text-muted-foreground">
               Be the first to access our platform and get help with your Indian service needs
@@ -218,12 +188,42 @@ const NRISolutions = () => {
                 )}
 
                 <Button type="submit" className="w-full" size="lg">
-                  Join Waitlist
+                  Join Community
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </form>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Services We Offer
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Immediate assistance available through our partner network
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <feature.icon className="w-8 h-8 text-brand-purple" />
+                  </div>
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-center">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
