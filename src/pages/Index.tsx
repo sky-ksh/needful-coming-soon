@@ -59,7 +59,7 @@ const Index = () => {
             <Button variant="brand-outline" size="lg" className="group" asChild>
               <Link to="/enterprise">
                 <Building2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                I'm an Enterprise
+                Business Solutions
               </Link>
             </Button>
           </div>
