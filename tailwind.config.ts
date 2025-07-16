@@ -80,7 +80,8 @@ export default {
 			},
 			fontFamily: {
 				'script': ['Lobster', 'cursive'],
-				'sans': ['Inter', 'system-ui', 'sans-serif']
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
