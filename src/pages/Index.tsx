@@ -18,8 +18,8 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-6 text-center">
           {/* Logo */}
-          <div className="mb-16 animate-fade-in py-20 px-8 overflow-visible w-full">
-            <h1 className="font-script text-7xl md:text-8xl lg:text-[10rem] font-normal leading-[1.2] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[180px] flex items-center justify-center">
+          <div className="mb-16 animate-fade-in py-32 px-12 overflow-visible w-full">
+            <h1 className="font-script text-7xl md:text-8xl lg:text-[10rem] font-normal leading-[1.4] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[220px] flex items-center justify-center">
               Needful
             </h1>
           </div>
