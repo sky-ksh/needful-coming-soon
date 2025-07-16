@@ -111,7 +111,7 @@ const NRISolutions = () => {
 
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="animate-fade-in text-center">
+          <div className="animate-fade-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple mb-6">
               NRI Solutions
             </h1>
@@ -120,7 +120,7 @@ const NRISolutions = () => {
               Your gateway to Indian services. Simplified for NRIs worldwide.
             </p>
 
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-lg text-muted-foreground max-w-3xl mb-8">
               We're building a service agent for NRIs anywhere. Whether you need help with visa appointments, banking, or navigating Indian red tape, our platform serves to be your best friend, combining neat tech with real human help so you can get things done in India, no matter where you live.
             </p>
           </div>
@@ -129,18 +129,18 @@ const NRISolutions = () => {
 
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-8">
+          <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Join Our Community
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl">
               Be the first to access our platform once it's ready. In the
               meantime, reach out for white-glove support to get things done in
               India.
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl">
             <Card className="border-0 shadow-2xl bg-background/80 backdrop-blur-sm">
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -240,39 +240,8 @@ const NRISolutions = () => {
         </div>
       </section>
 
-      <section className="py-12 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Services We Offer
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Immediate assistance available through our partner network
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm">
-                <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-8 h-8 text-brand-purple" />
-                  </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-center">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <footer className="border-t bg-muted/30 py-8 px-4">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto">
           <p className="text-muted-foreground">
             Simplifying access to Indian services for NRIs worldwide
           </p>
