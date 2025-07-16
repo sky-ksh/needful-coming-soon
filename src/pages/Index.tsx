@@ -5,51 +5,32 @@ const Index = () => {
   return <div className="min-h-screen bg-gradient-background font-sans">
       {/* Hero Section */}
       <div className="relative overflow-hidden min-h-screen flex items-center justify-center">
-        {/* Enhanced Background decoration */}
-        <div className="absolute inset-0 w-full h-full opacity-40">
-          <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full blur-2xl animate-float" style={{
+        {/* Background decoration */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-full opacity-30">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-brand rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-brand-purple-light rounded-full blur-2xl animate-float" style={{
           animationDelay: '1s'
         }}></div>
-          <div className="absolute bottom-40 left-1/3 w-24 h-24 bg-gradient-to-r from-blue-500/25 to-purple-500/25 rounded-full blur-2xl animate-float" style={{
+          <div className="absolute bottom-40 left-1/3 w-20 h-20 bg-brand-purple rounded-full blur-2xl animate-float" style={{
           animationDelay: '2s'
-        }}></div>
-          <div className="absolute top-1/2 right-1/3 w-28 h-28 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-full blur-2xl animate-float" style={{
-          animationDelay: '3s'
         }}></div>
         </div>
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-6 text-center">
+        <div className="relative z-10 container mx-auto px-6 text-center">
           {/* Logo */}
-          <div className="mb-20 animate-fade-in">
-            <div className="relative inline-block px-4 py-2">
-              <h1 className="font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal leading-[0.85] bg-gradient-hero-text bg-clip-text text-transparent shadow-elegant">
-                Needful
-              </h1>
-              {/* Premium glow effect */}
-              <div className="absolute inset-0 font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal leading-[0.85] bg-gradient-hero-glow bg-clip-text text-transparent blur-sm -z-10 px-4 py-2">
-                Needful
-              </div>
-              {/* Additional ambient glow */}
-              <div className="absolute inset-0 font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal leading-[0.85] bg-gradient-premium bg-clip-text text-transparent blur-md opacity-40 -z-20 px-4 py-2">
-                Needful
-              </div>
-            </div>
+          <div className="mb-16 animate-fade-in py-20 px-8 overflow-visible w-full">
+            <h1 className="font-script text-7xl md:text-8xl lg:text-[10rem] font-normal leading-[1.2] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[180px] flex items-center justify-center">
+              Needful
+            </h1>
           </div>
 
           {/* Tagline */}
           <div className="animate-fade-in" style={{
           animationDelay: '0.2s'
         }}>
-            <div className="relative inline-block">
-              <p className="font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-slate-800 tracking-wide shadow-text">
-                Access India. Simply and Securely.
-              </p>
-              {/* Subtle text shadow */}
-              <div className="absolute inset-0 font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-slate-600/30 blur-sm -z-10">
-                Access India. Simply and Securely.
-              </div>
-            </div>
+            <p className="text-2xl lg:text-4xl leading-relaxed font-sans font-medium text-zinc-950 md:text-4xl">
+              Access India. Simply and Securely.
+            </p>
           </div>
         </div>
 

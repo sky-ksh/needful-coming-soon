@@ -72,23 +72,15 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-brand': 'var(--gradient-brand)',
-				'gradient-background': 'var(--gradient-background)',
-				'gradient-hero-text': 'var(--gradient-hero-text)',
-				'gradient-hero-glow': 'var(--gradient-hero-glow)',
-				'gradient-premium': 'var(--gradient-premium)'
+				'gradient-background': 'var(--gradient-background)'
 			},
 			boxShadow: {
 				'brand': 'var(--shadow-brand)',
-				'glow': 'var(--shadow-glow)',
-				'text': 'var(--shadow-text)',
-				'text-glow': 'var(--shadow-text-glow)',
-				'premium': 'var(--shadow-premium)',
-				'elegant': 'var(--shadow-elegant)'
+				'glow': 'var(--shadow-glow)'
 			},
 			fontFamily: {
 				'script': ['Lobster', 'cursive'],
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'inter': ['Inter', 'system-ui', 'sans-serif']
+				'sans': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
