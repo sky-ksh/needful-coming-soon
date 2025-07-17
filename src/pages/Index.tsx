@@ -25,15 +25,15 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-6 text-center">
           {/* Logo */}
-          <div className="animate-fade-in md:py-24 md:px-16 sm:px-4 overflow-visible w-full">
-            <h1 className="font-script text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-normal leading-[1.1] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center flex items-center justify-center px-4 py-12">
+          <div className="animate-fade-in md:px-16 sm:px-4 overflow-visible w-full">
+            <h1 className="font-script text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-normal leading-[1.1] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center flex items-center justify-center px-4 pb-4">
               Needful
             </h1>
           </div>
 
           {/* Tagline */}
           <div
-            className="animate-fade-in -mt-8"
+            className="animate-fade-in -mt-12"
             style={{
               animationDelay: "0.2s",
             }}
