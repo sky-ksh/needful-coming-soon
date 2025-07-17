@@ -95,31 +95,23 @@ const Enterprise = () => {
       </div>
 
       <div className="container mx-auto px-6 py-20 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="mb-12 py-16 px-16 overflow-visible w-full">
-              <h1 className="font-script text-6xl md:text-7xl lg:text-8xl font-normal leading-[1.3] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[150px] flex items-center justify-center">
-                Needful
-              </h1>
-            </div>
+        <div className="grid lg:grid-cols-3 gap-16 items-start">
+          <div className="lg:col-span-2 space-y-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Upgrade Your{" "}
+              <span className="bg-gradient-brand bg-clip-text text-transparent">
+                CX Journey
+              </span>{" "}
+              With Needful.
+            </h2>
 
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Upgrade Your{" "}
-                <span className="bg-gradient-brand bg-clip-text text-transparent">
-                  CX Journey
-                </span>{" "}
-                With Needful.
-              </h2>
-
-              <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-2xl">
-                we embed into your NRI-facing workflows so you can delight your
-                global customers with the speed and polish they expect.
-              </p>
-            </div>
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              we embed into your NRI-facing workflows so you can delight your
+              global customers with the speed and polish they expect.
+            </p>
           </div>
 
-          <div className="lg:pl-8">
+          <div className="lg:col-span-1">
             <Card className="shadow-brand border-0 bg-card/80 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl font-semibold text-center">
