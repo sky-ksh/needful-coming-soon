@@ -33,7 +33,7 @@ const Index = () => {
 
           {/* Tagline */}
           <div
-            className="animate-fade-in -mt-12"
+            className="animate-fade-in -mt-4"
             style={{
               animationDelay: "0.2s",
             }}
