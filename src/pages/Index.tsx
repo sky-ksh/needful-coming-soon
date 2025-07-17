@@ -25,8 +25,8 @@ const Index = () => {
 
         <div className="relative z-10 container mx-auto px-6 text-center">
           {/* Logo */}
-          <div className="mb-16 animate-fade-in md:py-16 md:px-16 sm:px-4 overflow-visible w-full">
-            <h1 className="font-script text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-normal leading-[1.3] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[200px] flex items-center justify-center px-4">
+          <div className="mb-8 animate-fade-in md:py-20 md:px-16 sm:px-4 overflow-visible w-full">
+            <h1 className="font-script text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-normal leading-[1.3] bg-gradient-to-r from-[#2A2A5B] via-[#5D4E8A] to-[#8B5CF6] bg-clip-text text-transparent w-full text-center min-h-[280px] flex items-center justify-center px-4 pt-8">
               Needful
             </h1>
           </div>
