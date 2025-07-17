@@ -171,8 +171,8 @@ const NRISolutions = () => {
       </section>
 
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-left mb-12">
+        <div className="container mx-auto max-w-2xl">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Join Our Community
             </h2>
@@ -292,6 +292,39 @@ const NRISolutions = () => {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Services We Offer
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Immediate assistance available through our partner network
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card
+                key={index}
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-background/80 backdrop-blur-sm"
+              >
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <feature.icon className="w-8 h-8 text-brand-purple" />
+                  </div>
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-center">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <footer className="border-t bg-muted/30 py-12 px-4">
         <div className="container mx-auto text-center">
