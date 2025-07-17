@@ -96,7 +96,7 @@ const Enterprise = () => {
 
       <div className="container mx-auto px-6 py-20 lg:py-32">
         <div className="space-y-16">
-          <div className="text-center space-y-6">
+          <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Upgrade Your{" "}
               <span className="bg-gradient-brand bg-clip-text text-transparent">
@@ -105,19 +105,19 @@ const Enterprise = () => {
               With Needful.
             </h2>
 
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl">
               we embed into your NRI-facing workflows so you can delight your
               global customers with the speed and polish they expect.
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl">
             <Card className="shadow-brand border-0 bg-card/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-center">
+                <CardTitle className="text-2xl font-semibold">
                   Get Started Today
                 </CardTitle>
-                <p className="text-muted-foreground text-center">
+                <p className="text-muted-foreground">
                   Tell us about your business and we'll show you how Needful can
                   transform your customer experience.
                 </p>
