@@ -98,6 +98,24 @@ const handler = async (req: Request): Promise<Response> => {
 
       console.log("NRI email sent successfully:", emailResponse);
 
+      // Send notification email to company
+      const notificationResponse = await resend.emails.send({
+        from: "Needful <info@needfulusa.com>",
+        to: ["info@needfulusa.com"],
+        subject: "New NRI Community Signup",
+        html: `
+          <h1>New NRI Community Signup</h1>
+          <p><strong>Name:</strong> ${nriData.name}</p>
+          <p><strong>Email:</strong> ${nriData.email}</p>
+          <p><strong>Phone:</strong> ${nriData.phone || 'Not provided'}</p>
+          <p><strong>Service:</strong> ${nriData.service}</p>
+          <p><strong>Description:</strong> ${nriData.description || 'None provided'}</p>
+          <p>Please follow up with this lead as soon as possible.</p>
+        `,
+      });
+
+      console.log("NRI notification email sent successfully:", notificationResponse);
+
     } else if (formType === 'enterprise') {
       const enterpriseData = formData as EnterpriseFormData;
       
@@ -140,6 +158,25 @@ const handler = async (req: Request): Promise<Response> => {
       });
 
       console.log("Enterprise email sent successfully:", emailResponse);
+
+      // Send notification email to company
+      const enterpriseNotificationResponse = await resend.emails.send({
+        from: "Needful <info@needfulusa.com>",
+        to: ["info@needfulusa.com"],
+        subject: "New Enterprise Consultation Request",
+        html: `
+          <h1>New Enterprise Consultation Request</h1>
+          <p><strong>Name:</strong> ${enterpriseData.firstName} ${enterpriseData.lastName}</p>
+          <p><strong>Email:</strong> ${enterpriseData.workEmail}</p>
+          <p><strong>Company:</strong> ${enterpriseData.companyName}</p>
+          <p><strong>Job Title:</strong> ${enterpriseData.jobTitle}</p>
+          <p><strong>Company Size:</strong> ${enterpriseData.companySize}</p>
+          <p><strong>Needs:</strong> ${enterpriseData.needs}</p>
+          <p>This is a high-priority enterprise lead. Please respond within 24 hours as promised.</p>
+        `,
+      });
+
+      console.log("Enterprise notification email sent successfully:", enterpriseNotificationResponse);
     }
 
     return new Response(JSON.stringify({ success: true }), {
