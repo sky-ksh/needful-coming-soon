@@ -64,7 +64,7 @@ const handler = async (req: Request): Promise<Response> => {
 
       // Send thank you email
       const emailResponse = await resend.emails.send({
-        from: "Needful <onboarding@resend.dev>",
+        from: "Needful <info@needfulusa.com>",
         to: [nriData.email],
         subject: "Welcome to the Needful Community!",
         html: `
@@ -121,7 +121,7 @@ const handler = async (req: Request): Promise<Response> => {
 
       // Send thank you email
       const emailResponse = await resend.emails.send({
-        from: "Needful <onboarding@resend.dev>",
+        from: "Needful <info@needfulusa.com>",
         to: [enterpriseData.workEmail],
         subject: "Your Free Consultation Request - Needful",
         html: `
