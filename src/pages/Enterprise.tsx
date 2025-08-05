@@ -91,7 +91,7 @@ const Enterprise = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Upgrade Your{" "}
               <span className="bg-gradient-brand bg-clip-text text-transparent">
-                CX Journey
+                NRI Onboarding
               </span>{" "}
               With Needful.
             </h2>
