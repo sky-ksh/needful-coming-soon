@@ -71,6 +71,26 @@ const handler = async (req: Request): Promise<Response> => {
           <h1>Thank you for joining, ${nriData.name}!</h1>
           <p>We're excited to have you in the Needful community. We received your request for help with <strong>${nriData.service}</strong>.</p>
           <p>Our team will review your submission and get back to you soon with personalized assistance.</p>
+          
+          <p>If you'd like help with your OCI application, we can assist! To speed up the process, please tell us more about who's applying (for e.g. minor, previous Indian citizen, spouse of an Indian citizen, etc.) and send us copies of your documents. Copies of the below documents are typically needed for OCI applications:</p>
+          
+          <ol>
+            <li>Copy of your current passport (info page + amendments page)</li>
+            <li>Copy of your previous Indian passport if available (info page + last two pages)</li>
+            <li>Copy of your naturalization certificate</li>
+            <li>Copy of your Indian passport's surrender certificate (if you haven't surrendered your Indian passport yet, we can help with that too! Just send the other docs in this list)</li>
+            <li>Proof of address (driver's license, utility bill, etc.)</li>
+            <li>Proof of employment or current enrollment at a university</li>
+            <li>Your signature on a blank page</li>
+            <li>Copy / scan of a recent 2x2 passport pic</li>
+            <li>Copy of marriage certificate, if married</li>
+            <li>Copy of birth certificate, if applying for minor</li>
+            <li>Spouse's passport copy, if applying as a spouse</li>
+            <li>Address of your current employer or college</li>
+          </ol>
+          
+          <p>Please also share your current mailing address to which you will want to receive your OCI card.</p>
+          
           <p>In the meantime, feel free to reply to this email if you have any questions.</p>
           <p>Best regards,<br>The Needful Team</p>
         `,
