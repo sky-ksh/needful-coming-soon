@@ -69,7 +69,7 @@ const handler = async (req: Request): Promise<Response> => {
         subject: "Welcome to the Needful Community!",
         html: `
           <h1>Thank you for joining, ${nriData.name}!</h1>
-          <p>We're excited to have you in the Needful community. We received your request for help with <strong>${nriData.service}</strong>.</p>
+          <p>We're excited to have you in the Needful community. We received your request for help with ${nriData.service === 'Something else' ? 'a custom request' : `<strong>${nriData.service}</strong>`}.</p>
           <p>Our team will review your submission and get back to you soon with personalized assistance.</p>
           
           <p>If you'd like help with your OCI application, we can assist! To speed up the process, please tell us more about who's applying (for e.g. minor, previous Indian citizen, spouse of an Indian citizen, etc.) and send us copies of your documents. Copies of the below documents are typically needed for OCI applications:</p>
