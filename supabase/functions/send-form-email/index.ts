@@ -91,7 +91,7 @@ const handler = async (req: Request): Promise<Response> => {
           
           <p>Please also share your current mailing address to which you will want to receive your OCI card.</p>
           
-          <p>In the meantime, feel free to reply to this email if you have any questions.</p>
+          <p>In the meantime, feel free to reply to this email or reach out to us at info@needfulusa.com if you have any questions.</p>
           <p>Best regards,<br>The Needful Team</p>
         `,
       });
@@ -152,7 +152,7 @@ const handler = async (req: Request): Promise<Response> => {
             <li>We'll prepare a customized demo based on your company size (${enterpriseData.companySize})</li>
             <li>Schedule a call to discuss how Needful can transform your NRI customer experience</li>
           </ul>
-          <p>Questions? Simply reply to this email.</p>
+          <p>Questions? Simply reply to this email or reach out to us at info@needfulusa.com.</p>
           <p>Best regards,<br>The Needful Enterprise Team</p>
         `,
       });
