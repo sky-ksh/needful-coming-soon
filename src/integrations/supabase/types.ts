@@ -56,29 +56,35 @@ export type Database = {
       nri_community_signups: {
         Row: {
           created_at: string
+          description: string | null
           email: string
           full_name: string
           help_with: string
           id: string
           phone_number: string | null
+          service_type: string | null
           updated_at: string
         }
         Insert: {
           created_at?: string
+          description?: string | null
           email: string
           full_name: string
           help_with: string
           id?: string
           phone_number?: string | null
+          service_type?: string | null
           updated_at?: string
         }
         Update: {
           created_at?: string
+          description?: string | null
           email?: string
           full_name?: string
           help_with?: string
           id?: string
           phone_number?: string | null
+          service_type?: string | null
           updated_at?: string
         }
         Relationships: []

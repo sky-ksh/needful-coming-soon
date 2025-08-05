@@ -7,7 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import axios from "axios";
+import { supabase } from "@/integrations/supabase/client";
 const Enterprise = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -21,7 +21,6 @@ const Enterprise = () => {
   });
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
     if (
       !formData.firstName ||
       !formData.lastName ||
@@ -37,39 +36,42 @@ const Enterprise = () => {
       });
       return;
     }
-    const sendEnterpriceFormEmail = async () => {
-      try {
-        const response = await axios({
-          method: "POST",
-          url: "https://sendformemail-nhusq7w2vq-uc.a.run.app",
-          data: {
-            formData: formData,
-            formType: "enterprise",
-          },
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        return response.data;
-      } catch (error) {
-        console.error("Error:", error.response?.data || error.message);
-        throw error;
+
+    try {
+      const { error } = await supabase.functions.invoke('send-form-email', {
+        body: {
+          formData: formData,
+          formType: "enterprise",
+        },
+      });
+
+      if (error) {
+        console.error("Error:", error);
+        throw new Error(error.message);
       }
-    };
-    await sendEnterpriceFormEmail();
-    toast({
-      title: "Successfully joined the community!",
-      description: "We'll be in touch soon to help with your requirements.",
-    });
-    setFormData({
-      firstName: "",
-      lastName: "",
-      workEmail: "",
-      companyName: "",
-      jobTitle: "",
-      companySize: "",
-      needs: "",
-    });
+
+      toast({
+        title: "Request submitted successfully!",
+        description: "We'll contact you within 24 hours to schedule your consultation.",
+      });
+      
+      setFormData({
+        firstName: "",
+        lastName: "",
+        workEmail: "",
+        companyName: "",
+        jobTitle: "",
+        companySize: "",
+        needs: "",
+      });
+    } catch (error: any) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact support.",
+        variant: "destructive",
+      });
+    }
   };
   return (
     <div className="min-h-screen bg-gradient-background font-sans">

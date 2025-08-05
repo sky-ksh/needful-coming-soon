@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import axios from "axios";
 import {
   Select,
   SelectContent,
@@ -29,7 +28,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { getFunctions, httpsCallable } from "firebase/functions";
+import { supabase } from "@/integrations/supabase/client";
 const NRISolutions = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -67,37 +66,40 @@ const NRISolutions = () => {
       });
       return;
     }
-    const sendNRISolutionsFormEmail = async () => {
-      try {
-        const response = await axios({
-          method: "POST",
-          url: "https://sendformemail-nhusq7w2vq-uc.a.run.app",
-          data: {
-            formData: formData,
-            formType: "nri",
-          },
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        return response.data;
-      } catch (error) {
-        console.error("Error:", error.response?.data || error.message);
-        throw error;
+
+    try {
+      const { error } = await supabase.functions.invoke('send-form-email', {
+        body: {
+          formData: formData,
+          formType: "nri",
+        },
+      });
+
+      if (error) {
+        console.error("Error:", error);
+        throw new Error(error.message);
       }
-    };
-    await sendNRISolutionsFormEmail();
-    toast({
-      title: "Successfully joined the community!",
-      description: "We'll be in touch soon to help with your requirements.",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      description: "",
-    });
+
+      toast({
+        title: "Successfully joined the community!",
+        description: "We'll be in touch soon to help with your requirements.",
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        description: "",
+      });
+    } catch (error: any) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact support.",
+        variant: "destructive",
+      });
+    }
   };
   const features = [
     {
