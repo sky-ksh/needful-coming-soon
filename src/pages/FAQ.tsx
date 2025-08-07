@@ -80,7 +80,7 @@ const FAQ = () => {
       </header>
 
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="animate-fade-in mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
               Resources
