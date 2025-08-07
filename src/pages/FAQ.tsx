@@ -37,15 +37,20 @@ const FAQ = () => {
   }];
   
   const faqs = [{
-    title: "FAQ for OCI Applications",
+    title: "OCI Application FAQ",
     description: "Frequently asked questions about OCI process and requirements",
     type: "faq",
     href: "/faq/oci-applications"
   }, {
-    title: "FAQ for PAN Card Applications",
+    title: "PAN Card FAQ",
     description: "Common questions and answers about PAN card services",
     type: "faq",
     href: "/faq/pan-card"
+  }, {
+    title: "NRI Banking FAQ",
+    description: "Frequently asked questions about banking for NRIs",
+    type: "faq",
+    href: "/faq/nri-banking"
   }];
 
   const blogPosts = [{
