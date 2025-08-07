@@ -44,7 +44,7 @@ const Guides = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Button variant="ghost" size="sm" className="flex items-center gap-2 text-brand-purple hover:text-brand-purple/80" asChild>
-              <Link to="/resources">
+              <Link to="/faq">
                 <ArrowLeft className="w-4 h-4" />
                 Back to Resources
               </Link>
