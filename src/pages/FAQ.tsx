@@ -91,7 +91,7 @@ const FAQ = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* DIY Guides Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/diy-guides'}>
+              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/guides'}>
                 <FileText className="w-6 h-6 text-brand-purple" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   DIY Guides
@@ -110,7 +110,7 @@ const FAQ = () => {
                     </Link>
                   </div>
                 ))}
-                <Link to="/diy-guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                <Link to="/guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
                   View all guides
                   <ExternalLink className="w-4 h-4" />
                 </Link>
@@ -119,7 +119,7 @@ const FAQ = () => {
 
             {/* FAQ Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faq'}>
+              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faqs'}>
                 <HelpCircle className="w-6 h-6 text-brand-purple" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   FAQ
@@ -138,7 +138,7 @@ const FAQ = () => {
                     </Link>
                   </div>
                 ))}
-                <Link to="/faq" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                <Link to="/faqs" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
                   View all FAQs
                   <ExternalLink className="w-4 h-4" />
                 </Link>
