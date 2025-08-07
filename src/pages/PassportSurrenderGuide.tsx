@@ -16,9 +16,6 @@ const PassportSurrenderGuide = () => {
                 Back to FAQ
               </Link>
             </Button>
-            <div className="text-2xl font-bold text-brand-purple">
-              Passport Surrender Guide
-            </div>
             <Navigation variant="inline" />
           </div>
         </div>

@@ -56,9 +56,6 @@ const FAQ = () => {
                 Back to NRI Solutions
               </Link>
             </Button>
-            <div className="text-2xl font-bold text-brand-purple">
-              FAQ & Helpful Articles
-            </div>
             <Navigation variant="inline" />
           </div>
         </div>

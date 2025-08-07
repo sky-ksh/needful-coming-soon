@@ -16,9 +16,6 @@ const OCIApplicationsFAQ = () => {
                 Back to FAQ
               </Link>
             </Button>
-            <div className="text-2xl font-bold text-brand-purple">
-              OCI Applications FAQ
-            </div>
             <Navigation variant="inline" />
           </div>
         </div>

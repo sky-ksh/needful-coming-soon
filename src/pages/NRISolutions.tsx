@@ -100,9 +100,6 @@ const NRISolutions = () => {
                 Back to Home
               </Link>
             </Button>
-            <div className="text-2xl font-bold text-brand-purple">
-              NRI Solutions
-            </div>
             <Navigation variant="inline" />
           </div>
         </div>
