@@ -3,8 +3,72 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, FileText, HelpCircle, ExternalLink, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import { faqItems, guides, blogPosts } from "@/data/faqData";
 const FAQ = () => {
+  const guides = [{
+    title: "Passport Surrender Guide",
+    description: "Complete guide for surrendering your Indian passport after obtaining foreign citizenship",
+    type: "guide",
+    href: "/faq/passport-surrender"
+  }, {
+    title: "OCI Guide",
+    description: "Step-by-step guide for Overseas Citizen of India applications",
+    type: "guide",
+    href: "/faq/oci-guide"
+  }, {
+    title: "Passport Renewal Guide",
+    description: "Complete walkthrough for renewing your Indian passport",
+    type: "guide",
+    href: "/faq/passport-renewal"
+  }, {
+    title: "PAN Card Guide",
+    description: "Easy instructions for PAN card applications and corrections",
+    type: "guide",
+    href: "/faq/pan-card-guide"
+  }, {
+    title: "NRI Banking Guide",
+    description: "Essential banking setup and account management for NRIs",
+    type: "guide",
+    href: "/faq/nri-banking"
+  }, {
+    title: "NRI Taxes Guide",
+    description: "Tax obligations and filing requirements for Non-Resident Indians",
+    type: "guide",
+    href: "/faq/nri-taxes"
+  }];
+  
+  const faqs = [{
+    title: "OCI Application",
+    description: "Frequently asked questions about OCI process and requirements",
+    type: "faq",
+    href: "/faq/oci-applications"
+  }, {
+    title: "PAN Card",
+    description: "Common questions and answers about PAN card services",
+    type: "faq",
+    href: "/faq/pan-card"
+  }, {
+    title: "NRI Banking",
+    description: "Frequently asked questions about banking for NRIs",
+    type: "faq",
+    href: "/faq/nri-banking"
+  }];
+
+  const blogPosts = [{
+    title: "Will VFS's Reign Ever End? A History of the Monopoly We All Hate",
+    description: "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",
+    type: "blog",
+    href: "/blog/vfs-monopoly-history"
+  }, {
+    title: "What is GIFT City and how can NRIs take advantage of it?",
+    description: "Understanding India's financial hub and the opportunities it presents for overseas Indians",
+    type: "blog",
+    href: "/blog/gift-city-nri-opportunities"
+  }, {
+    title: "You've Been Putting Off That OCI Application. When Is the Right Time?",
+    description: "Strategic timing considerations for your Overseas Citizen of India application",
+    type: "blog",
+    href: "/blog/oci-application-timing"
+  }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -67,7 +131,7 @@ const FAQ = () => {
                 </h2>
               </div>
               <div className="space-y-4">
-                {faqItems.map(faq => (
+                {faqs.map(faq => (
                   <div key={faq.title} className="group">
                     <Link to={faq.href} className="block">
                       <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">

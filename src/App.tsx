@@ -29,15 +29,13 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
-            <Route path="/resources" element={<FAQ />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/diy-guides/passport-surrender" element={<PassportSurrenderGuide />} />
+            <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
-            {/* Legacy route redirects */}
-            <Route path="/faq" element={<FAQ />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
