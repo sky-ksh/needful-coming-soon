@@ -3,55 +3,45 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, FileText, ExternalLink, Calendar, Clock, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-
 const Blog = () => {
-  const blogPosts = [
-    {
-      title: "Understanding NRI Tax Obligations",
-      description: "A comprehensive guide to tax compliance for Non-Resident Indians",
-      href: "/blog/nri-tax-obligations",
-      date: "March 15, 2024",
-      readTime: "8 min read"
-    },
-    {
-      title: "OCI vs PIO: Which is Right for You?",
-      description: "Compare the benefits and requirements of OCI and PIO status",
-      href: "/blog/oci-vs-pio",
-      date: "March 10, 2024",
-      readTime: "6 min read"
-    },
-    {
-      title: "Banking as an NRI: Best Practices",
-      description: "Tips for managing your finances across borders",
-      href: "/blog/nri-banking-best-practices",
-      date: "March 5, 2024",
-      readTime: "10 min read"
-    },
-    {
-      title: "Navigating Property Investment in India",
-      description: "Essential considerations for NRIs looking to invest in Indian real estate",
-      href: "/blog/nri-property-investment",
-      date: "February 28, 2024",
-      readTime: "12 min read"
-    },
-    {
-      title: "Digital India: Online Services for NRIs",
-      description: "How to leverage digital platforms for Indian paperwork from abroad",
-      href: "/blog/digital-india-nri-services",
-      date: "February 20, 2024",
-      readTime: "7 min read"
-    },
-    {
-      title: "Common Mistakes in Indian Paperwork",
-      description: "Avoid these pitfalls when dealing with Indian bureaucracy",
-      href: "/blog/common-paperwork-mistakes",
-      date: "February 15, 2024",
-      readTime: "9 min read"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
+  const blogPosts = [{
+    title: "Understanding NRI Tax Obligations",
+    description: "A comprehensive guide to tax compliance for Non-Resident Indians",
+    href: "/blog/nri-tax-obligations",
+    date: "March 15, 2024",
+    readTime: "8 min read"
+  }, {
+    title: "OCI vs PIO: Which is Right for You?",
+    description: "Compare the benefits and requirements of OCI and PIO status",
+    href: "/blog/oci-vs-pio",
+    date: "March 10, 2024",
+    readTime: "6 min read"
+  }, {
+    title: "Banking as an NRI: Best Practices",
+    description: "Tips for managing your finances across borders",
+    href: "/blog/nri-banking-best-practices",
+    date: "March 5, 2024",
+    readTime: "10 min read"
+  }, {
+    title: "Navigating Property Investment in India",
+    description: "Essential considerations for NRIs looking to invest in Indian real estate",
+    href: "/blog/nri-property-investment",
+    date: "February 28, 2024",
+    readTime: "12 min read"
+  }, {
+    title: "Digital India: Online Services for NRIs",
+    description: "How to leverage digital platforms for Indian paperwork from abroad",
+    href: "/blog/digital-india-nri-services",
+    date: "February 20, 2024",
+    readTime: "7 min read"
+  }, {
+    title: "Common Mistakes in Indian Paperwork",
+    description: "Avoid these pitfalls when dealing with Indian bureaucracy",
+    href: "/blog/common-paperwork-mistakes",
+    date: "February 15, 2024",
+    readTime: "9 min read"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -75,14 +65,11 @@ const Blog = () => {
                 Blog
               </h1>
             </div>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Insights, tips, and updates about navigating Indian paperwork and processes as an NRI.
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl">Our latest insights, tips and updates for NRIs.</p>
           </div>
 
           <div className="grid gap-6">
-            {blogPosts.map(post => (
-              <Card key={post.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
+            {blogPosts.map(post => <Card key={post.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -108,8 +95,7 @@ const Blog = () => {
                     </div>
                   </div>
                 </CardHeader>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -126,8 +112,6 @@ const Blog = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Blog;
