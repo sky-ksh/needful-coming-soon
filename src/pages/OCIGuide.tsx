@@ -355,6 +355,7 @@ const OCIGuide = () => {
                 <li>The Indian Consulate does not want originals of apostilled documents. Copies are fine.</li>
                 <li>Remember to sign the undertaking swearing you surrendered your Indian voter ID / ration card (or never had one).</li>
                 <li>Sign the OCI application form that is generated once you submit the online application. The signature space is hidden in the fourth or fifth page, so make sure you don't miss it!</li>
+                <li>Make sure documents are not expired and that your passport is at least six months away from expiration upon submission of the application.</li>
               </ul>
             </CardContent>
           </Card>
