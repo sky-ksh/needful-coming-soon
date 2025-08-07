@@ -211,7 +211,7 @@ const NRISolutions = () => {
               to="/faq" 
               className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
             >
-              FAQ & Helpful Articles
+              Resources
             </Link>
           </div>
         </div>

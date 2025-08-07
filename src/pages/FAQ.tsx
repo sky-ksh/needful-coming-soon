@@ -35,6 +35,7 @@ const FAQ = () => {
     type: "guide",
     href: "/faq/nri-taxes"
   }];
+  
   const faqs = [{
     title: "FAQ for OCI Applications",
     description: "Frequently asked questions about OCI process and requirements",
@@ -45,6 +46,23 @@ const FAQ = () => {
     description: "Common questions and answers about PAN card services",
     type: "faq",
     href: "/faq/pan-card"
+  }];
+
+  const blogPosts = [{
+    title: "Understanding NRI Tax Obligations",
+    description: "A comprehensive guide to tax compliance for Non-Resident Indians",
+    type: "blog",
+    href: "/blog/nri-tax-obligations"
+  }, {
+    title: "OCI vs PIO: Which is Right for You?",
+    description: "Compare the benefits and requirements of OCI and PIO status",
+    type: "blog",
+    href: "/blog/oci-vs-pio"
+  }, {
+    title: "Banking as an NRI: Best Practices",
+    description: "Tips for managing your finances across borders",
+    type: "blog",
+    href: "/blog/nri-banking-best-practices"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
@@ -65,67 +83,93 @@ const FAQ = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
-              FAQ & Helpful Articles
+              Resources
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">Find step-by-step guides and answers to common questions about Indian paperwork.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl">Find step-by-step guides, frequently asked questions, and helpful articles about Indian paperwork.</p>
           </div>
 
-          <div className="space-y-12">
-            {/* DIY Guides Section */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* DIY Guides Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/guides'}>
                 <FileText className="w-6 h-6 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   DIY Guides
                 </h2>
               </div>
-              <div className="grid gap-4">
-                {guides.map(guide => <Card key={guide.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
-                    <CardHeader>
-                      <div className="flex items-start justify-between">
-                        <div>
-                          <CardTitle className="text-xl text-foreground hover:text-brand-purple transition-colors">
-                            <Link to={guide.href} className="flex items-center gap-2">
-                              {guide.title}
-                              <ExternalLink className="w-4 h-4" />
-                            </Link>
-                          </CardTitle>
-                          <CardDescription className="text-muted-foreground mt-2">
-                            {guide.description}
-                          </CardDescription>
-                        </div>
-                      </div>
-                    </CardHeader>
-                  </Card>)}
+              <div className="space-y-4">
+                {guides.slice(0, 3).map(guide => (
+                  <div key={guide.title} className="group">
+                    <Link to={guide.href} className="block">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                        {guide.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-2">
+                        {guide.description}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
+                <Link to="/guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                  View all guides
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
               </div>
             </div>
 
-            {/* FAQ Section */}
+            {/* FAQ Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faqs'}>
                 <HelpCircle className="w-6 h-6 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Frequently Asked Questions
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
+                  FAQ
                 </h2>
               </div>
-              <div className="grid gap-4">
-                {faqs.map(faq => <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
-                    <CardHeader>
-                      <div className="flex items-start justify-between">
-                        <div>
-                          <CardTitle className="text-xl text-foreground hover:text-brand-purple transition-colors">
-                            <Link to={faq.href} className="flex items-center gap-2">
-                              {faq.title}
-                              <ExternalLink className="w-4 h-4" />
-                            </Link>
-                          </CardTitle>
-                          <CardDescription className="text-muted-foreground mt-2">
-                            {faq.description}
-                          </CardDescription>
-                        </div>
-                      </div>
-                    </CardHeader>
-                  </Card>)}
+              <div className="space-y-4">
+                {faqs.map(faq => (
+                  <div key={faq.title} className="group">
+                    <Link to={faq.href} className="block">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                        {faq.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-2">
+                        {faq.description}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
+                <Link to="/faqs" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                  View all FAQs
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Blog Column */}
+            <div>
+              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/blog'}>
+                <FileText className="w-6 h-6 text-brand-purple" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
+                  Blog
+                </h2>
+              </div>
+              <div className="space-y-4">
+                {blogPosts.map(post => (
+                  <div key={post.title} className="group">
+                    <Link to={post.href} className="block">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-2">
+                        {post.description}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
+                <Link to="/blog" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                  View all articles
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>

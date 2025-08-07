@@ -38,7 +38,7 @@ const Navigation = ({ variant = 'fixed' }: NavigationProps) => {
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link to="/faq" className="w-full">
-            Helpful Links
+            Resources
           </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
