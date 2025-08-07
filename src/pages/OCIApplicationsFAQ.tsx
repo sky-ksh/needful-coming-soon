@@ -116,18 +116,9 @@ const OCIApplicationsFAQ = () => {
                       <li>OCI (after surrender): 6–8 weeks</li>
                     </ul>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
+                  <p className="text-muted-foreground leading-relaxed">
                     If you haven't started the surrender step, assume at least 10–12 weeks total. Add time for mailing, errors, or if your paperwork isn't perfect.
                   </p>
-                  <a 
-                    href="https://www.reddit.com/r/ABCDesis/comments/12abc12/oci_timelines_2024/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 transition-colors underline-offset-4 hover:underline"
-                  >
-                    Reddit discussion with timelines
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
                 </div>
               </AccordionContent>
             </AccordionItem>
