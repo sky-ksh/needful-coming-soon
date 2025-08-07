@@ -88,30 +88,48 @@ const PANCardFAQ = () => {
 
             <AccordionItem value="item-4" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
               <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
-                My PAN is marked "inoperative" because I didn't link Aadhaar. What do I do?
+                Can I use Aadhaar and file as an Indian citizen if I'm an OCI?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Good news: NRIs and OCIs are exempt from mandatory Aadhaar linking.
+                    <strong>Short answer:</strong> No. If you're an OCI, you must use Form 49AA — even if you have an Aadhaar.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    If your PAN shows as inoperative:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
-                    <li>Log in to the e-filing portal</li>
-                    <li>File a grievance</li>
-                    <li>Email your Assessing Officer (AO) with:
-                      <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
-                        <li>Passport copy</li>
-                        <li>OCI card (if applicable)</li>
-                        <li>Proof of foreign address</li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p className="text-muted-foreground leading-relaxed">
-                    If this doesn't resolve it, you can request a relative in India to visit the local Income Tax Office with your documents.
-                  </p>
+                  
+                  <div className="mb-6">
+                    <p className="text-foreground font-medium mb-2">But I have Aadhaar. Why can't I file Form 49A and link it?</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Even if you've previously lived in India and have an Aadhaar, you are still legally classified as a foreign citizen once you receive an OCI card. Filing Form 49A (for Indian citizens) would be considered misrepresentation.
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="text-foreground font-medium mb-2">What happens if I file Form 49A as an OCI?</p>
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                      <li><strong>Rejection or delay:</strong> The PAN application may be rejected or delayed due to mismatch between your declared citizenship and documents.</li>
+                      <li><strong>Inaccurate tax records:</strong> Filing the wrong form can lead to incorrect classification in the Income Tax system, which could cause issues during future compliance or KYC processes.</li>
+                      <li><strong>Aadhaar complications:</strong> The Aadhaar you're trying to use is likely linked to an Indian mobile number — and the OTP for PAN e-signing will only go to that number. If you no longer have access to it, you won't be able to complete the e-KYC.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-foreground font-medium mb-2">So even if I have Aadhaar, I still have to submit documents physically?</p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Yes — in most OCI/foreign citizen cases, physical submission is still required.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      You can fill the application online, upload your documents, and pay the fee — but you'll then need to:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
+                      <li>Print the completed form</li>
+                      <li>Affix your photograph</li>
+                      <li>Sign the form</li>
+                      <li>Courier it with copies of your documents to the Protean processing center in Pune</li>
+                    </ul>
+                    <p className="text-muted-foreground leading-relaxed">
+                      There's currently no consistent workaround, unless you (a) have Indian citizenship or (b) a valid Aadhaar linked to an Indian number and file using Form 49A, which again is not legally correct for OCI holders.
+                    </p>
+                  </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
