@@ -204,9 +204,17 @@ const NRISolutions = () => {
 
       <footer className="border-t bg-muted/30 py-8 px-4">
         <div className="container mx-auto">
-          <p className="text-muted-foreground">
-            Simplifying access to Indian services for NRIs worldwide
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-muted-foreground">
+              Kindly doing the needful so you don't have to.
+            </p>
+            <Link 
+              to="/faq" 
+              className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
+            >
+              FAQ & Helpful Articles
+            </Link>
+          </div>
         </div>
       </footer>
     </div>;
