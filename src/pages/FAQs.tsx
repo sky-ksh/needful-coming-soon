@@ -25,16 +25,6 @@ const FAQs = () => {
       title: "NRI Banking FAQ",
       description: "Frequently asked questions about banking for NRIs",
       href: "/faq/nri-banking-faq"
-    },
-    {
-      title: "Tax Filing FAQ",
-      description: "Common questions about tax obligations for NRIs",
-      href: "/faq/tax-filing-faq"
-    },
-    {
-      title: "Document Verification FAQ",
-      description: "Questions about document verification processes",
-      href: "/faq/document-verification-faq"
     }
   ];
 
