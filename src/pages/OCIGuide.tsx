@@ -190,16 +190,16 @@ const OCIGuide = () => {
                 {/* Born Outside India */}
                 <Collapsible open={openSections['outside']} onOpenChange={() => toggleSection('outside')}>
                   <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors">
-                    <h4 className="font-semibold">2.4 Applicants born outside of India</h4>
+                    <h4 className="font-semibold">2.4 Minors born outside of India</h4>
                     <ChevronDown className={`h-4 w-4 transition-transform ${openSections['outside'] ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <div className="mt-4 p-4 border rounded-lg">
                       <p className="mb-3 text-sm">All items listed for minors above plus:</p>
                       <ul className="list-disc list-inside space-y-2 text-sm">
-                        <li>Minor's birth certificate</li>
-                        <li>Proof of Indian origin of parents/grandparents/great-grandparents</li>
-                        <li>Parents' marriage certificate or divorce/death certificate</li>
+                        <li>Minor's birth certificate - must be apostilled.</li>
+                        <li>Proof of Indian origin of parents/grandparents/great-grandparents: this is generally the parents' OCI or Indian passport.</li>
+                        <li>Parents' marriage certificate or divorce/death certificate - must be notarized.</li>
                         <li>Parents' current passports and naturalization certificates</li>
                       </ul>
                     </div>
