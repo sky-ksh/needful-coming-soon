@@ -4,20 +4,30 @@ import { ArrowLeft, FileText, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 const FAQ = () => {
   const guides = [{
-    title: "DIY OCI Guide",
+    title: "OCI Guide",
     description: "Step-by-step guide for Overseas Citizen of India applications",
     type: "guide",
-    href: "/faq/diy-oci-guide"
+    href: "/faq/oci-guide"
   }, {
-    title: "DIY Passport Renewal Guide",
+    title: "Passport Renewal Guide",
     description: "Complete walkthrough for renewing your Indian passport",
     type: "guide",
-    href: "/faq/diy-passport-renewal"
+    href: "/faq/passport-renewal"
   }, {
-    title: "DIY PAN Card Guide",
+    title: "PAN Card Guide",
     description: "Easy instructions for PAN card applications and corrections",
     type: "guide",
-    href: "/faq/diy-pan-card"
+    href: "/faq/pan-card-guide"
+  }, {
+    title: "NRI Banking Guide",
+    description: "Essential banking setup and account management for NRIs",
+    type: "guide",
+    href: "/faq/nri-banking"
+  }, {
+    title: "NRI Taxes Guide",
+    description: "Tax obligations and filing requirements for Non-Resident Indians",
+    type: "guide",
+    href: "/faq/nri-taxes"
   }];
   const faqs = [{
     title: "FAQ for OCI Applications",
