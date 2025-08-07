@@ -266,6 +266,18 @@ const OCIGuide = () => {
               
               <div>
                 <h4 className="font-semibold mb-3">Fee Structure:</h4>
+                <p className="text-sm text-muted-foreground mb-3">
+                  <strong>Note:</strong> These fees are valid as of August 2025. Always check the{" "}
+                  <a 
+                    href="https://services.vfsglobal.com/usa/en/ind/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    VFS website
+                  </a>{" "}
+                  for the latest pricing.
+                </p>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse border border-border rounded-lg">
                     <thead>
@@ -286,14 +298,6 @@ const OCIGuide = () => {
                       <tr>
                         <td className="border border-border p-3">VFS service fee</td>
                         <td className="border border-border p-3">$15.90</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-border p-3">Optional courier service</td>
-                        <td className="border border-border p-3">~$15–20</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-border p-3">Optional SMS service</td>
-                        <td className="border border-border p-3">$2</td>
                       </tr>
                     </tbody>
                   </table>
