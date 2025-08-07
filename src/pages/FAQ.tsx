@@ -96,9 +96,9 @@ const FAQ = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* DIY Guides Column */}
             <div>
-              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/guides'}>
+              <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                   DIY Guides
                 </h2>
               </div>
@@ -124,9 +124,9 @@ const FAQ = () => {
 
             {/* FAQ Column */}
             <div>
-              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faqs'}>
+              <div className="flex items-center gap-3 mb-6">
                 <HelpCircle className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                   FAQ
                 </h2>
               </div>
@@ -152,9 +152,9 @@ const FAQ = () => {
 
             {/* Blog Column */}
             <div>
-              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/blog'}>
+              <div className="flex items-center gap-3 mb-6">
                 <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                   Blog
                 </h2>
               </div>
