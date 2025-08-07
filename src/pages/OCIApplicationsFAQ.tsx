@@ -35,7 +35,7 @@ const OCIApplicationsFAQ = () => {
 
           <Accordion type="single" collapsible className="w-full space-y-4">
             <AccordionItem value="item-1" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 What are the benefits of an OCI Card?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -57,7 +57,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 Do I have to apply online and via VFS Global?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -101,7 +101,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 How long does the application process take?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -133,7 +133,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 I see you can renounce your Indian citizenship or surrender your passport. What's the difference, and do I have to do both?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -152,7 +152,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-5" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 Which documents do I need to notarize?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -177,7 +177,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-6" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 What's document apostilling, and which documents need it?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -205,7 +205,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-7" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 How can I get documents apostilled?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -230,7 +230,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-8" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 Can I add new docs to my online OCI application once submitted?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -243,7 +243,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-9" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 Can I request to change details in my OCI submission to VFS once submitted?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
@@ -259,7 +259,7 @@ const OCIApplicationsFAQ = () => {
             </AccordionItem>
 
             <AccordionItem value="item-10" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
                 How can I generate shipping labels?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
