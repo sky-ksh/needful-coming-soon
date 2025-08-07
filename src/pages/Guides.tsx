@@ -14,7 +14,7 @@ const Guides = () => {
     {
       title: "OCI Guide",
       description: "Step-by-step guide for Overseas Citizen of India applications",
-      href: "/faq/oci-guide"
+      href: "/guides/oci-guide"
     },
     {
       title: "Passport Renewal Guide",

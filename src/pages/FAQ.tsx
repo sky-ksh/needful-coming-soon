@@ -13,7 +13,7 @@ const FAQ = () => {
     title: "OCI Guide",
     description: "Step-by-step guide for Overseas Citizen of India applications",
     type: "guide",
-    href: "/faq/oci-guide"
+    href: "/guides/oci-guide"
   }, {
     title: "Passport Renewal Guide",
     description: "Complete walkthrough for renewing your Indian passport",
