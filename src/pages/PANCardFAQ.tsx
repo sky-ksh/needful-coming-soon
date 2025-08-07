@@ -245,11 +245,42 @@ const PANCardFAQ = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    There are two authorized providers:
+                    There are three authorized options:
                   </p>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    <li>NSDL/Protean</li>
-                    <li>UTIITSL</li>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>
+                      <a 
+                        href="https://tinpan.proteantech.in/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-brand-purple hover:text-brand-purple/80 underline decoration-brand-purple/30 hover:decoration-brand-purple/60 transition-colors inline-flex items-center gap-1"
+                      >
+                        NSDL/Protean
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="https://www.pan.utiitsl.com/PAN/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-brand-purple hover:text-brand-purple/80 underline decoration-brand-purple/30 hover:decoration-brand-purple/60 transition-colors inline-flex items-center gap-1"
+                      >
+                        UTIITSL
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-brand-purple hover:text-brand-purple/80 underline decoration-brand-purple/30 hover:decoration-brand-purple/60 transition-colors inline-flex items-center gap-1"
+                      >
+                        e-PAN (Income Tax Portal)
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </AccordionContent>
