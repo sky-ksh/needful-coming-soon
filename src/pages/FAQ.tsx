@@ -49,20 +49,20 @@ const FAQ = () => {
   }];
 
   const blogPosts = [{
-    title: "Understanding NRI Tax Obligations",
-    description: "A comprehensive guide to tax compliance for Non-Resident Indians",
+    title: "Will VFS's Reign Ever End? A History of the Monopoly We All Hate",
+    description: "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",
     type: "blog",
-    href: "/blog/nri-tax-obligations"
+    href: "/blog/vfs-monopoly-history"
   }, {
-    title: "OCI vs PIO: Which is Right for You?",
-    description: "Compare the benefits and requirements of OCI and PIO status",
+    title: "What is GIFT City and how can NRIs take advantage of it?",
+    description: "Understanding India's financial hub and the opportunities it presents for overseas Indians",
     type: "blog",
-    href: "/blog/oci-vs-pio"
+    href: "/blog/gift-city-nri-opportunities"
   }, {
-    title: "Banking as an NRI: Best Practices",
-    description: "Tips for managing your finances across borders",
+    title: "You've Been Putting Off That OCI Application. When Is the Right Time?",
+    description: "Strategic timing considerations for your Overseas Citizen of India application",
     type: "blog",
-    href: "/blog/nri-banking-best-practices"
+    href: "/blog/oci-application-timing"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
