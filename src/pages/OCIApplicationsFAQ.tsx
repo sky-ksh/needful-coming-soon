@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -33,13 +33,12 @@ const OCIApplicationsFAQ = () => {
             </p>
           </div>
 
-          <div className="space-y-8">
-            {/* Question 1 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  What are the benefits of an OCI Card?
-                </h2>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            <AccordionItem value="item-1" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                What are the benefits of an OCI Card?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     The Overseas Citizen of India Card is practically a lifelong visa to India and the closest thing to an Indian dual-citizenship (which India doesn't allow). You can live, work, study, and open bank accounts in India without applying for a visa. No police registration required for long stays. You get parity with Non-Resident Indians, just not voting rights, public office, or farmland ownership.
@@ -54,15 +53,14 @@ const OCIApplicationsFAQ = () => {
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 2 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Do I have to apply online and via VFS Global?
-                </h2>
+            <AccordionItem value="item-2" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                Do I have to apply online and via VFS Global?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     In the US and UK (where Needful operates), you must first apply online and then go through VFS Global. There are no walk-ins or direct consulate submissions. In the US, you apply to VFS by mail. In the UK, you book an in-person appointment.
@@ -99,15 +97,14 @@ const OCIApplicationsFAQ = () => {
                     </ul>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 3 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  How long does the application process take?
-                </h2>
+            <AccordionItem value="item-3" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                How long does the application process take?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Often, it's a two-step process: first, you must surrender your Indian passport, which takes 3-5 weeks. If you never had an Indian passport, you can directly apply for your OCI, which can take 6-8 weeks.
@@ -132,15 +129,14 @@ const OCIApplicationsFAQ = () => {
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 4 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  I see you can renounce your Indian citizenship or surrender your passport. What's the difference, and do I have to do both?
-                </h2>
+            <AccordionItem value="item-4" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                I see you can renounce your Indian citizenship or surrender your passport. What's the difference, and do I have to do both?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     This used to be two separate processes: "renunciation" (a legal declaration) and "passport surrender" (physically giving up the passport).
@@ -152,15 +148,14 @@ const OCIApplicationsFAQ = () => {
                     But beware: VFS websites and Reddit threads still show outdated info. We know it's confusing. Just know that as of now, surrendering the passport is enough. That said, these policies are subject to change, and some consulates interpret the rules differently—so it's always safest to check Needful's intake form for the latest.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 5 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Which documents do I need to notarize?
-                </h2>
+            <AccordionItem value="item-5" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                Which documents do I need to notarize?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Almost every applicant will need to notarize at least one document: the Affidavit in Lieu of Originals. It's a short, signed statement that confirms your document copies are authentic.
@@ -178,15 +173,14 @@ const OCIApplicationsFAQ = () => {
                     To avoid mistakes, fill out our intake form—we'll tell you exactly what to notarize, apostille, bring as an original, or upload.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 6 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  What's document apostilling, and which documents need it?
-                </h2>
+            <AccordionItem value="item-6" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                What's document apostilling, and which documents need it?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     An apostille is a formal government seal that certifies a document for use abroad. India is part of the Hague Convention, so apostilled US documents are accepted without further legalization.
@@ -207,15 +201,14 @@ const OCIApplicationsFAQ = () => {
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 7 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  How can I get documents apostilled?
-                </h2>
+            <AccordionItem value="item-7" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                How can I get documents apostilled?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     You can either do it yourself (cheaper but often a hassle) or hire a service.
@@ -233,29 +226,27 @@ const OCIApplicationsFAQ = () => {
                     </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 8 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Can I add new docs to my online OCI application once submitted?
-                </h2>
+            <AccordionItem value="item-8" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                Can I add new docs to my online OCI application once submitted?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed">
                     Yes, the new OCI website lets you remove and add docs even after submitting. So if you realize you forgot to upload a document, just login and navigate to the document upload section.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 9 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Can I request to change details in my OCI submission to VFS once submitted?
-                </h2>
+            <AccordionItem value="item-9" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                Can I request to change details in my OCI submission to VFS once submitted?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     In theory, yes—but in practice, it's very difficult. If your application hasn't been forwarded to the consulate yet, you might be able to request a change by contacting VFS. Just don't expect a fast response.
@@ -264,15 +255,14 @@ const OCIApplicationsFAQ = () => {
                     What's more common is that VFS or the consulate will contact you to request missing documents or corrections.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Question 10 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  How can I generate shipping labels?
-                </h2>
+            <AccordionItem value="item-10" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
+              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline">
+                How can I generate shipping labels?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     <strong>NOTICE:</strong> As of Aug 1, 2025, VFS no longer generates FedEx shipping labels and applicants must obtain their own labels. We recommend UPS or USPS.
@@ -281,9 +271,9 @@ const OCIApplicationsFAQ = () => {
                     For any such changes to VFS' process, we recommend checking their socials for the latest updates, or discussions in r/nri on Reddit.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
