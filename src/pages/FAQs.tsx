@@ -3,25 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import { faqItems } from "@/data/faqData";
 
 const FAQs = () => {
-  const faqs = [
-    {
-      title: "OCI Application",
-      description: "Frequently asked questions about OCI process and requirements",
-      href: "/faq/oci-applications"
-    },
-    {
-      title: "PAN Card",
-      description: "Common questions and answers about PAN card services",
-      href: "/faq/pan-card"
-    },
-    {
-      title: "NRI Banking",
-      description: "Frequently asked questions about banking for NRIs",
-      href: "/faq/nri-banking"
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
@@ -29,7 +13,7 @@ const FAQs = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Button variant="ghost" size="sm" className="flex items-center gap-2 text-brand-purple hover:text-brand-purple/80" asChild>
-              <Link to="/faq">
+              <Link to="/resources">
                 <ArrowLeft className="w-4 h-4" />
                 Back to Resources
               </Link>
@@ -54,7 +38,7 @@ const FAQs = () => {
           </div>
 
           <div className="grid gap-6">
-            {faqs.map(faq => (
+            {faqItems.map(faq => (
               <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
