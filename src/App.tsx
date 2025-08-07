@@ -9,6 +9,9 @@ import Index from "./pages/Index";
 import Enterprise from "./pages/Enterprise";
 import NRISolutions from "./pages/NRISolutions";
 import FAQ from "./pages/FAQ";
+import Guides from "./pages/Guides";
+import FAQs from "./pages/FAQs";
+import Blog from "./pages/Blog";
 import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
 import PANCardFAQ from "./pages/PANCardFAQ";
@@ -27,6 +30,9 @@ const App = () => (
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/faqs" element={<FAQs />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
