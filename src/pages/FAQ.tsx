@@ -36,7 +36,7 @@ const FAQ = () => {
       title: "FAQ for PAN Card Applications", 
       description: "Common questions and answers about PAN card services",
       type: "faq",
-      href: "/faq/pan-card-applications"
+      href: "/faq/pan-card"
     }
   ];
 
