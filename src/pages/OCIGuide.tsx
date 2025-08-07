@@ -350,14 +350,11 @@ const OCIGuide = () => {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Upload documents correctly</li>
-                <li>Double-check data</li>
-                <li>Include all previous names</li>
-                <li>Provide complete address</li>
-                <li>Do not send original apostilled documents</li>
-                <li>For foreign spouses, a sworn affidavit must be completed and notarised</li>
-                <li>Undertaking for surrender of Indian voter ID/ration card</li>
-                <li>Parental authorisation for minors</li>
+                <li>Make sure the online application on the government OCI website (not VFS) has all your supporting documents uploaded. Even if you don't see a field for a document, consolidate all your supporting documents in a single PDF and submit it under passport photo copy.</li>
+                <li>No e-signatures or remote online notarizations. But, copies of wet signatures are fine.</li>
+                <li>The Indian Consulate does not want originals of apostilled documents. Copies are fine.</li>
+                <li>Remember to sign the undertaking swearing you surrendered your Indian voter ID / ration card (or never had one).</li>
+                <li>Sign the OCI application form that is generated once you submit the online application. The signature space is hidden in the fourth or fifth page, so make sure you don't miss it!</li>
               </ul>
             </CardContent>
           </Card>
