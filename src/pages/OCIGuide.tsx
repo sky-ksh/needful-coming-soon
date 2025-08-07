@@ -197,7 +197,7 @@ const OCIGuide = () => {
                     <div className="mt-4 p-4 border rounded-lg">
                       <p className="mb-3 text-sm">All items listed for minors above plus:</p>
                       <ul className="list-disc list-inside space-y-2 text-sm">
-                        <li>Minor's birth certificate - must be apostilled.</li>
+                        <li>Minor's birth certificate - must be apostilled if issued outside of India.</li>
                         <li>Proof of Indian origin of parents/grandparents/great-grandparents: this is generally the parents' OCI or Indian passport.</li>
                         <li>Parents' marriage certificate or divorce/death certificate - must be notarized.</li>
                         <li>Parents' current passports and naturalization certificates</li>
