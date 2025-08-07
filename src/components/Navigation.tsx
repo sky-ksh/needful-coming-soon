@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed top-4 right-4 z-[100]">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
