@@ -7,24 +7,19 @@ import Navigation from "@/components/Navigation";
 const FAQs = () => {
   const faqs = [
     {
-      title: "FAQ for OCI Applications",
+      title: "OCI Application",
       description: "Frequently asked questions about OCI process and requirements",
       href: "/faq/oci-applications"
     },
     {
-      title: "FAQ for PAN Card Applications",
+      title: "PAN Card",
       description: "Common questions and answers about PAN card services",
       href: "/faq/pan-card"
     },
     {
-      title: "Passport Renewal FAQ",
-      description: "Common questions about passport renewal process",
-      href: "/faq/passport-renewal-faq"
-    },
-    {
-      title: "NRI Banking FAQ",
+      title: "NRI Banking",
       description: "Frequently asked questions about banking for NRIs",
-      href: "/faq/nri-banking-faq"
+      href: "/faq/nri-banking"
     }
   ];
 
