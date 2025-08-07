@@ -12,6 +12,7 @@ import FAQ from "./pages/FAQ";
 import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
 import PANCardFAQ from "./pages/PANCardFAQ";
+import PassportSurrenderGuide from "./pages/PassportSurrenderGuide";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
             <Route path="*" element={<NotFound />} />

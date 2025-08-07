@@ -4,6 +4,11 @@ import { ArrowLeft, FileText, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 const FAQ = () => {
   const guides = [{
+    title: "Passport Surrender Guide",
+    description: "Complete guide for surrendering your Indian passport after obtaining foreign citizenship",
+    type: "guide",
+    href: "/faq/passport-surrender"
+  }, {
     title: "OCI Guide",
     description: "Step-by-step guide for Overseas Citizen of India applications",
     type: "guide",
