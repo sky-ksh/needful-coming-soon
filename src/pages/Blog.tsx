@@ -5,41 +5,33 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Blog = () => {
   const blogPosts = [{
-    title: "Understanding NRI Tax Obligations",
-    description: "A comprehensive guide to tax compliance for Non-Resident Indians",
-    href: "/blog/nri-tax-obligations",
-    date: "March 15, 2024",
-    readTime: "8 min read"
+    title: "Will VFS's Reign Ever End? A History of the Monopoly We All Hate",
+    description: "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",
+    href: "/blog/vfs-monopoly-history"
   }, {
-    title: "OCI vs PIO: Which is Right for You?",
-    description: "Compare the benefits and requirements of OCI and PIO status",
-    href: "/blog/oci-vs-pio",
-    date: "March 10, 2024",
-    readTime: "6 min read"
+    title: "What is GIFT City and how can NRIs take advantage of it?",
+    description: "Understanding India's financial hub and the opportunities it presents for overseas Indians",
+    href: "/blog/gift-city-nri-opportunities"
   }, {
-    title: "Banking as an NRI: Best Practices",
-    description: "Tips for managing your finances across borders",
-    href: "/blog/nri-banking-best-practices",
-    date: "March 5, 2024",
-    readTime: "10 min read"
+    title: "You've Been Putting Off That OCI Application. When Is the Right Time?",
+    description: "Strategic timing considerations for your Overseas Citizen of India application",
+    href: "/blog/oci-application-timing"
   }, {
-    title: "Navigating Property Investment in India",
-    description: "Essential considerations for NRIs looking to invest in Indian real estate",
-    href: "/blog/nri-property-investment",
-    date: "February 28, 2024",
-    readTime: "12 min read"
+    title: "Why Everyone from Dubai to New Jersey Is Buying Property in Goa (and Why You Be Cautious)",
+    description: "The global rush to Goa's real estate market and the risks you need to consider",
+    href: "/blog/goa-property-investment-risks"
   }, {
-    title: "Digital India: Online Services for NRIs",
-    description: "How to leverage digital platforms for Indian paperwork from abroad",
-    href: "/blog/digital-india-nri-services",
-    date: "February 20, 2024",
-    readTime: "7 min read"
+    title: "Ahmedabad Is Quietly Becoming the GIFT City Feeder Town. Should You Bet on It?",
+    description: "How Ahmedabad's proximity to GIFT City is reshaping its real estate and investment landscape",
+    href: "/blog/ahmedabad-gift-city-investment"
   }, {
-    title: "Common Mistakes in Indian Paperwork",
-    description: "Avoid these pitfalls when dealing with Indian bureaucracy",
-    href: "/blog/common-paperwork-mistakes",
-    date: "February 15, 2024",
-    readTime: "9 min read"
+    title: "Bangalore's Startup Scene in 2025: Real Signals Amid the Noise",
+    description: "Separating genuine opportunities from hype in India's Silicon Valley",
+    href: "/blog/bangalore-startup-scene-2025"
+  }, {
+    title: "India's Tier 2 Cities Are Booming. Here's Where the Smart Money Is Going",
+    description: "Investment opportunities in India's emerging urban centers beyond the metros",
+    href: "/blog/tier-2-cities-investment-opportunities"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
@@ -82,16 +74,6 @@ const Blog = () => {
                       <CardDescription className="text-muted-foreground mt-2">
                         {post.description}
                       </CardDescription>
-                      <div className="flex items-center gap-4 mt-3 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-4 h-4" />
-                          {post.date}
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          {post.readTime}
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </CardHeader>
