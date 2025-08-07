@@ -33,6 +33,25 @@ const PassportSurrenderGuide = () => {
             </p>
           </div>
 
+          {/* Important Note */}
+          <div className="mb-8">
+            <Card className="border-0 shadow-lg bg-blue-50 dark:bg-blue-950/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Important Note</h3>
+                    <p className="text-blue-800 dark:text-blue-200 text-sm">
+                      Many official sources use "renunciation" and "surrender" application interchangeably. 
+                      As of May, 2025, the "Surrender" application is all you need to successfully obtain an OCI Card. 
+                      The steps for the Surrender application are below.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="space-y-8">
             {/* Step 1 */}
             <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
