@@ -16,6 +16,7 @@ import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
 import PANCardFAQ from "./pages/PANCardFAQ";
 import PassportSurrenderGuide from "./pages/PassportSurrenderGuide";
+import OCIGuide from "./pages/OCIGuide";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
+            <Route path="/guides/oci-guide" element={<OCIGuide />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
