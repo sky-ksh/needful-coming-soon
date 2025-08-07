@@ -3,28 +3,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-
 const FAQs = () => {
-  const faqs = [
-    {
-      title: "OCI Application",
-      description: "Frequently asked questions about OCI process and requirements",
-      href: "/faq/oci-applications"
-    },
-    {
-      title: "PAN Card",
-      description: "Common questions and answers about PAN card services",
-      href: "/faq/pan-card"
-    },
-    {
-      title: "NRI Banking",
-      description: "Frequently asked questions about banking for NRIs",
-      href: "/faq/nri-banking"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
+  const faqs = [{
+    title: "FAQ for OCI Applications",
+    description: "Frequently asked questions about OCI process and requirements",
+    href: "/faq/oci-applications"
+  }, {
+    title: "FAQ for PAN Card Applications",
+    description: "Common questions and answers about PAN card services",
+    href: "/faq/pan-card"
+  }, {
+    title: "Passport Renewal FAQ",
+    description: "Common questions about passport renewal process",
+    href: "/faq/passport-renewal-faq"
+  }, {
+    title: "NRI Banking FAQ",
+    description: "Frequently asked questions about banking for NRIs",
+    href: "/faq/nri-banking-faq"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -43,7 +40,7 @@ const FAQs = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in mb-12">
             <div className="flex items-center gap-4 mb-6">
-              <HelpCircle className="w-12 h-12 md:w-14 md:h-14 text-brand-purple" />
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple">
                 Frequently Asked Questions
               </h1>
@@ -54,8 +51,7 @@ const FAQs = () => {
           </div>
 
           <div className="grid gap-6">
-            {faqs.map(faq => (
-              <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
+            {faqs.map(faq => <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -71,8 +67,7 @@ const FAQs = () => {
                     </div>
                   </div>
                 </CardHeader>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -89,8 +84,6 @@ const FAQs = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default FAQs;
