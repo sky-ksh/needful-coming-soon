@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Enterprise from "./pages/Enterprise";
 import NRISolutions from "./pages/NRISolutions";
 import FAQ from "./pages/FAQ";
+import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/nri-solutions" element={<NRISolutions />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />
