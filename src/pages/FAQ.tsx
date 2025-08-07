@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, FileText, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 const FAQ = () => {
   const guides = [{
     title: "Passport Surrender Guide",
@@ -58,6 +59,7 @@ const FAQ = () => {
             <div className="text-2xl font-bold text-brand-purple">
               FAQ & Helpful Articles
             </div>
+            <Navigation variant="inline" />
           </div>
         </div>
       </header>

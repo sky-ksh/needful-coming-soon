@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 
 const OCIApplicationsFAQ = () => {
   return (
@@ -18,6 +19,7 @@ const OCIApplicationsFAQ = () => {
             <div className="text-2xl font-bold text-brand-purple">
               OCI Applications FAQ
             </div>
+            <Navigation variant="inline" />
           </div>
         </div>
       </header>

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import Navigation from "@/components/Navigation";
 const Enterprise = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -76,13 +77,16 @@ const Enterprise = () => {
   return (
     <div className="min-h-screen bg-gradient-background font-sans">
       <div className="container mx-auto px-6 py-6">
-        <Link
-          to="/"
-          className="inline-flex items-center text-foreground hover:text-primary transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back to Home
-        </Link>
+        <div className="flex items-center justify-between">
+          <Link
+            to="/"
+            className="inline-flex items-center text-foreground hover:text-primary transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Home
+          </Link>
+          <Navigation variant="inline" />
+        </div>
       </div>
 
       <div className="container mx-auto px-6 py-20 lg:py-32">

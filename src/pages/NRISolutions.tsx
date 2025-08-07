@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Globe, FileText, CreditCard, Building2, ArrowRight, Check, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import Navigation from "@/components/Navigation";
 const NRISolutions = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -102,6 +103,7 @@ const NRISolutions = () => {
             <div className="text-2xl font-bold text-brand-purple">
               NRI Solutions
             </div>
+            <Navigation variant="inline" />
           </div>
         </div>
       </header>
