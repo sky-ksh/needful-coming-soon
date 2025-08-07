@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, FileText, HelpCircle, ExternalLink } from "lucide-react";
+import { ArrowLeft, FileText, HelpCircle, ExternalLink, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const FAQ = () => {
@@ -91,8 +91,8 @@ const FAQ = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* DIY Guides Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/guides'}>
-                <FileText className="w-6 h-6 text-brand-purple" />
+              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/guides'}>
+                <FileText className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   DIY Guides
                 </h2>
@@ -119,8 +119,8 @@ const FAQ = () => {
 
             {/* FAQ Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faqs'}>
-                <HelpCircle className="w-6 h-6 text-brand-purple" />
+              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/faqs'}>
+                <HelpCircle className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   FAQ
                 </h2>
@@ -147,8 +147,8 @@ const FAQ = () => {
 
             {/* Blog Column */}
             <div>
-              <div className="flex items-center gap-2 mb-6 cursor-pointer group" onClick={() => window.location.href = '/blog'}>
-                <FileText className="w-6 h-6 text-brand-purple" />
+              <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => window.location.href = '/blog'}>
+                <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-brand-purple transition-colors">
                   Blog
                 </h2>
