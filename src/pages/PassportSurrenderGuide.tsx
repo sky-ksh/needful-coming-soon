@@ -29,7 +29,7 @@ const PassportSurrenderGuide = () => {
               Passport Surrender Guide
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Complete step-by-step guide for surrendering your Indian passport after obtaining foreign citizenship.
+              Note: Many official sources use "renunciation" and "surrender" application interchangeably. As of May, 2025, the "Surrender" application is all you need to successfully obtain an OCI Card. The steps for the Surrender application are below.
             </p>
           </div>
 
