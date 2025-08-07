@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, FileText, ExternalLink, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink, Calendar, Clock, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 
@@ -69,8 +69,8 @@ const Blog = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <FileText className="w-8 h-8 text-brand-purple" />
+            <div className="flex items-center gap-4 mb-6">
+              <BookOpen className="w-12 h-12 md:w-14 md:h-14 text-brand-purple" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple">
                 Blog
               </h1>

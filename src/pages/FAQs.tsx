@@ -47,8 +47,8 @@ const FAQs = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <HelpCircle className="w-8 h-8 text-brand-purple" />
+            <div className="flex items-center gap-4 mb-6">
+              <HelpCircle className="w-12 h-12 md:w-14 md:h-14 text-brand-purple" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple">
                 Frequently Asked Questions
               </h1>
