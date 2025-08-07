@@ -176,7 +176,7 @@ const OCIGuide = () => {
                         <li>OCI application form with minor's signature (or thumb impression if the minor is under 5) and parents' signatures</li>
                         <li>Parental Authorization form – notarized and signed by both parents</li>
                         <li>Minor's current passport</li>
-                        <li>Minor's last held Indian passport and renunciation certificate (if applicable)</li>
+                        <li>Minor's last held Indian passport and renunciation certificate</li>
                         <li>Parents' passports</li>
                         <li>Parents' marriage certificate or divorce/death certificate. Note: the marriage certificate must be apostilled if it was issued outside of India.</li>
                         <li>Legal status in the US for parents holding non-U.S. passports</li>
