@@ -2,46 +2,35 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, FileText, HelpCircle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const FAQ = () => {
-  const guides = [
-    {
-      title: "DIY OCI Guide",
-      description: "Step-by-step guide for Overseas Citizen of India applications",
-      type: "guide",
-      href: "/faq/diy-oci-guide"
-    },
-    {
-      title: "DIY Passport Renewal Guide", 
-      description: "Complete walkthrough for renewing your Indian passport",
-      type: "guide",
-      href: "/faq/diy-passport-renewal"
-    },
-    {
-      title: "DIY PAN Card Guide",
-      description: "Easy instructions for PAN card applications and corrections",
-      type: "guide", 
-      href: "/faq/diy-pan-card"
-    }
-  ];
-
-  const faqs = [
-    {
-      title: "FAQ for OCI Applications",
-      description: "Frequently asked questions about OCI process and requirements",
-      type: "faq",
-      href: "/faq/oci-applications"
-    },
-    {
-      title: "FAQ for PAN Card Applications", 
-      description: "Common questions and answers about PAN card services",
-      type: "faq",
-      href: "/faq/pan-card"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
+  const guides = [{
+    title: "DIY OCI Guide",
+    description: "Step-by-step guide for Overseas Citizen of India applications",
+    type: "guide",
+    href: "/faq/diy-oci-guide"
+  }, {
+    title: "DIY Passport Renewal Guide",
+    description: "Complete walkthrough for renewing your Indian passport",
+    type: "guide",
+    href: "/faq/diy-passport-renewal"
+  }, {
+    title: "DIY PAN Card Guide",
+    description: "Easy instructions for PAN card applications and corrections",
+    type: "guide",
+    href: "/faq/diy-pan-card"
+  }];
+  const faqs = [{
+    title: "FAQ for OCI Applications",
+    description: "Frequently asked questions about OCI process and requirements",
+    type: "faq",
+    href: "/faq/oci-applications"
+  }, {
+    title: "FAQ for PAN Card Applications",
+    description: "Common questions and answers about PAN card services",
+    type: "faq",
+    href: "/faq/pan-card"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -64,10 +53,7 @@ const FAQ = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
               FAQ & Helpful Articles
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Everything you need to know about Indian services and processes. 
-              Find step-by-step guides and answers to common questions.
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl">Find step-by-step guides and answers to common questions about Indian paperwork.</p>
           </div>
 
           <div className="space-y-12">
@@ -80,8 +66,7 @@ const FAQ = () => {
                 </h2>
               </div>
               <div className="grid gap-4">
-                {guides.map((guide) => (
-                  <Card key={guide.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
+                {guides.map(guide => <Card key={guide.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                     <CardHeader>
                       <div className="flex items-start justify-between">
                         <div>
@@ -97,8 +82,7 @@ const FAQ = () => {
                         </div>
                       </div>
                     </CardHeader>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
 
@@ -111,8 +95,7 @@ const FAQ = () => {
                 </h2>
               </div>
               <div className="grid gap-4">
-                {faqs.map((faq) => (
-                  <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
+                {faqs.map(faq => <Card key={faq.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                     <CardHeader>
                       <div className="flex items-start justify-between">
                         <div>
@@ -128,8 +111,7 @@ const FAQ = () => {
                         </div>
                       </div>
                     </CardHeader>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
           </div>
@@ -142,17 +124,12 @@ const FAQ = () => {
             <p className="text-muted-foreground">
               Kindly doing the needful so you don't have to.
             </p>
-            <Link 
-              to="/" 
-              className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
-            >
+            <Link to="/" className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline">
               Back to Home
             </Link>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default FAQ;
