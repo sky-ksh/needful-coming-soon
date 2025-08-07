@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import Enterprise from "./pages/Enterprise";
 import NRISolutions from "./pages/NRISolutions";
@@ -19,15 +20,17 @@ const App = () => (
     <TooltipProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/enterprise" element={<Enterprise />} />
-          <Route path="/nri-solutions" element={<NRISolutions />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
-          <Route path="/faq/pan-card" element={<PANCardFAQ />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/enterprise" element={<Enterprise />} />
+            <Route path="/nri-solutions" element={<NRISolutions />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
+            <Route path="/faq/pan-card" element={<PANCardFAQ />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
         <Toaster />
         <Sonner />
       </BrowserRouter>
