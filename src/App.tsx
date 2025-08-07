@@ -10,6 +10,7 @@ import NRISolutions from "./pages/NRISolutions";
 import FAQ from "./pages/FAQ";
 import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
+import PANCardFAQ from "./pages/PANCardFAQ";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/nri-solutions" element={<NRISolutions />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
+          <Route path="/faq/pan-card" element={<PANCardFAQ />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />
