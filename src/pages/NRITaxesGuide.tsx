@@ -6,14 +6,12 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { ArrowLeft, ExternalLink, CheckCircle, XCircle, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-
 const NRITaxesGuide = () => {
   // SEO optimization
   useEffect(() => {
     const title = "NRI Tax Filing Guide | Needful";
     const description = "Complete guide to NRI tax filing in India including residency status, income taxation, deductions, TDS, repatriation, and ITR filing process.";
     document.title = title;
-
     const ensureTag = (selector: string, create: () => HTMLElement) => {
       let el = document.head.querySelector(selector) as HTMLElement | null;
       if (!el) {
@@ -22,14 +20,12 @@ const NRITaxesGuide = () => {
       }
       return el;
     };
-
     const metaDesc = ensureTag('meta[name="description"]', () => {
       const m = document.createElement("meta");
       m.setAttribute("name", "description");
       return m;
     }) as HTMLMetaElement;
     metaDesc.setAttribute("content", description);
-
     const canonical = ensureTag('link[rel="canonical"]', () => {
       const l = document.createElement("link");
       l.setAttribute("rel", "canonical");
@@ -37,9 +33,7 @@ const NRITaxesGuide = () => {
     }) as HTMLLinkElement;
     canonical.setAttribute("href", `${window.location.origin}/faq/nri-taxes`);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b bg-card">
         <div className="container mx-auto px-4 py-4">
@@ -63,9 +57,7 @@ const NRITaxesGuide = () => {
             <h1 className="text-4xl font-bold text-foreground">
               Needful's NRI Tax Filing Guide
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Complete guide to understanding NRI tax obligations, residency status, income taxation, and filing requirements in India.
-            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Understand NRI tax obligations, residency status, income taxation, and filing requirements in India.</p>
           </div>
 
           {/* Section 1 */}
@@ -238,24 +230,14 @@ const NRITaxesGuide = () => {
               <ul className="list-disc list-inside space-y-2">
                 <li>
                   Get a Tax Residency Certificate{" "}
-                  <a 
-                    href="https://www.irs.gov/individuals/international-taxpayers/certification-of-us-residency-for-tax-treaty-purposes" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center gap-1"
-                  >
+                  <a href="https://www.irs.gov/individuals/international-taxpayers/certification-of-us-residency-for-tax-treaty-purposes" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                     (TRC) <ExternalLink className="h-3 w-3" />
                   </a>{" "}
                   from your country of residence
                 </li>
                 <li>
                   Submit Form 10F online through your{" "}
-                  <a 
-                    href="https://eportal.incometax.gov.in/iec/foservices/#/login" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center gap-1"
-                  >
+                  <a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                     e-filing portal <ExternalLink className="h-3 w-3" />
                   </a>
                 </li>
@@ -373,23 +355,13 @@ const NRITaxesGuide = () => {
               <p>Choose:</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>
-                  <a 
-                    href="https://www.incometax.gov.in/iec/foportal/help/how-to-file-itr2-form" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center gap-1"
-                  >
+                  <a href="https://www.incometax.gov.in/iec/foportal/help/how-to-file-itr2-form" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                     ITR-2 <ExternalLink className="h-3 w-3" />
                   </a>
                   : No business income
                 </li>
                 <li>
-                  <a 
-                    href="https://www.incometax.gov.in/iec/foportal/sites/default/files/2023-04/ITR3_Notified%20Form%20AY%202023-24.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center gap-1"
-                  >
+                  <a href="https://www.incometax.gov.in/iec/foportal/sites/default/files/2023-04/ITR3_Notified%20Form%20AY%202023-24.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                     ITR-3 <ExternalLink className="h-3 w-3" />
                   </a>
                   : With business income
@@ -437,23 +409,13 @@ const NRITaxesGuide = () => {
                 <p className="mb-2">You'll need:</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
-                    <a 
-                      href="https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-forms/form-15ca-um" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline inline-flex items-center gap-1"
-                    >
+                    <a href="https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-forms/form-15ca-um" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                       Form 15CA <ExternalLink className="h-3 w-3" />
                     </a>
                     {" "}(self-declaration online)
                   </li>
                   <li>
-                    <a 
-                      href="https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form15cb-um" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline inline-flex items-center gap-1"
-                    >
+                    <a href="https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form15cb-um" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                       Form 15CB <ExternalLink className="h-3 w-3" />
                     </a>
                     {" "}(signed by a CA if transfer exceeds ₹5 lakhs)
@@ -483,12 +445,7 @@ const NRITaxesGuide = () => {
                 <li>Declare all Indian income</li>
                 <li>
                   Download your{" "}
-                  <a 
-                    href="https://www.incometax.gov.in/iec/foportal/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center gap-1"
-                  >
+                  <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
                     AIS <ExternalLink className="h-3 w-3" />
                   </a>
                   {" "}(Annual Info Statement)
@@ -506,12 +463,12 @@ const NRITaxesGuide = () => {
           <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-2xl text-brand-purple">
-                Still Need Help?
+                Need a Hand with the Rest?
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-foreground">
-                Sign up for our services and receive customized support for your India-side pains.
+                This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
               </p>
               <Button variant="brand" asChild>
                 <Link to="/nri-solutions">
@@ -527,17 +484,12 @@ const NRITaxesGuide = () => {
         <div className="container mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground">Kindly doing the needful so you don't have to.</p>
-            <Link
-              to="/faq"
-              className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
-            >
+            <Link to="/faq" className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline">
               Back to FAQ & Helpful Articles
             </Link>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default NRITaxesGuide;
