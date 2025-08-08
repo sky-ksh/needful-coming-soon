@@ -22,11 +22,6 @@ const Guides = () => {
       href: "/faq/pan-card-guide"
     },
     {
-      title: "NRI Banking Guide",
-      description: "Essential banking setup and account management for NRIs",
-      href: "/faq/nri-banking"
-    },
-    {
       title: "NRI Taxes Guide",
       description: "Tax obligations and filing requirements for Non-Resident Indians",
       href: "/faq/nri-taxes"
