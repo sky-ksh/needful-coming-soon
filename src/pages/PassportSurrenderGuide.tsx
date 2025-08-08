@@ -3,10 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, ExternalLink, FileText, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-
 const PassportSurrenderGuide = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <header className="border-b bg-card">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4 mb-4">
@@ -28,9 +26,7 @@ const PassportSurrenderGuide = () => {
             <h1 className="text-4xl font-bold text-foreground">
               Passport Surrender Guide
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Note: Many official sources use "renunciation" and "surrender" application interchangeably. As of May, 2025, the "Surrender" application is all you need to successfully obtain an OCI Card. The steps for the Surrender application are below.
-            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Note: Many official sources use "renunciation" and "surrender" application interchangeably. As of 2025, the "Surrender" application is all you need to successfully obtain an OCI Card. The steps for the Surrender application are below.</p>
           </div>
             {/* Step 1 */}
             <Card>
@@ -215,10 +211,10 @@ const PassportSurrenderGuide = () => {
           {/* Community Section */}
           <div className="mt-16 mb-8 bg-muted/30 rounded-lg p-8 space-y-6">
             <h2 className="text-2xl font-bold text-primary">
-              Still Need Help?
+              Need a Hand with the Rest?
             </h2>
             <p className="text-foreground text-lg">
-              Sign up for our services and receive customized support for your India-side pains.
+              This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
             </p>
             <Button variant="brand" asChild>
               <Link to="/nri-solutions">
@@ -241,8 +237,6 @@ const PassportSurrenderGuide = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default PassportSurrenderGuide;
