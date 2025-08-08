@@ -78,88 +78,94 @@ const FAQ = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* DIY Guides Column */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <FileText className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  DIY Guides
-                </h2>
-              </div>
-              <div className="space-y-4">
-                {guides.slice(0, 3).map(guide => (
-                  <div key={guide.title} className="group">
-                    <Link to={guide.href} className="block">
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
-                        {guide.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
-                        {guide.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-                <Link to="/guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
-                  View all guides
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
+            <Card className="border shadow-lg bg-background/80 backdrop-blur-sm rounded-2xl">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <FileText className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
+                  <CardTitle className="text-2xl md:text-3xl text-foreground">DIY Guides</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {guides.slice(0, 3).map(guide => (
+                    <div key={guide.title} className="group">
+                      <Link to={guide.href} className="block">
+                        <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                          {guide.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {guide.description}
+                        </p>
+                      </Link>
+                    </div>
+                  ))}
+                  <Link to="/guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                    View all guides
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* FAQ Column */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <HelpCircle className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  FAQ
-                </h2>
-              </div>
-              <div className="space-y-4">
-                {faqs.map(faq => (
-                  <div key={faq.title} className="group">
-                    <Link to={faq.href} className="block">
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
-                        {faq.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
-                        {faq.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-                <Link to="/faqs" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
-                  View all FAQs
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
+            <Card className="border shadow-lg bg-background/80 backdrop-blur-sm rounded-2xl">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <HelpCircle className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
+                  <CardTitle className="text-2xl md:text-3xl text-foreground">FAQ</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {faqs.map(faq => (
+                    <div key={faq.title} className="group">
+                      <Link to={faq.href} className="block">
+                        <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                          {faq.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {faq.description}
+                        </p>
+                      </Link>
+                    </div>
+                  ))}
+                  <Link to="/faqs" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                    View all FAQs
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Blog Column */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Blog
-                </h2>
-              </div>
-              <div className="space-y-4">
-                {blogPostsPreview.map(post => (
-                  <div key={post.title} className="group">
-                    <Link to={post.href} className="block">
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
-                        {post.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
-                        {post.description}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
-                <Link to="/blog" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
-                  View all articles
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
+            <Card className="border shadow-lg bg-background/80 backdrop-blur-sm rounded-2xl">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-brand-purple" />
+                  <CardTitle className="text-2xl md:text-3xl text-foreground">Blog</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {blogPostsPreview.map(post => (
+                    <div key={post.title} className="group">
+                      <Link to={post.href} className="block">
+                        <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {post.description}
+                        </p>
+                      </Link>
+                    </div>
+                  ))}
+                  <Link to="/blog" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
+                    View all articles
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
