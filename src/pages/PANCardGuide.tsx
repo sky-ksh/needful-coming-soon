@@ -85,7 +85,7 @@ const PANCardGuide = () => {
               <p>Select how you want to submit your documents:</p>
               
               <ul className="list-disc list-inside space-y-2">
-                <li><strong>e-KYC & e-Sign</strong> → Fully online, but requires Aadhaar with mobile OTP (typically linked to Indian number for many applicants)</li>
+                <li><strong>e-KYC & e-Sign</strong> → Fully online, but requires Aadhaar with mobile OTP</li>
                 <li><strong>Scan & e-Sign</strong> → Upload photo, signature, and document scans, then e-sign with OTP</li>
                 <li><strong>Physical Submission</strong> → Upload everything, then print the form and courier signed copies + documents to India</li>
               </ul>
