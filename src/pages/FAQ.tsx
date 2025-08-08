@@ -26,7 +26,6 @@ const FAQ = () => {
     type: "guide",
     href: "/faq/nri-taxes"
   }];
-  
   const faqs = [{
     title: "OCI Application",
     description: "Frequently asked questions about OCI process and requirements",
@@ -43,15 +42,8 @@ const FAQ = () => {
     type: "faq",
     href: "/faq/nri-banking"
   }];
-
-  const featuredHrefs = [
-    "/blog/vfs-monopoly-history",
-    "/blog/goa-property-investment-risks",
-    "/blog/ahmedabad-gift-city-investment",
-  ];
-  const blogPostsPreview: BlogPost[] = featuredHrefs
-    .map((href) => blogPosts.find((p) => p.href === href))
-    .filter((p): p is BlogPost => Boolean(p));
+  const featuredHrefs = ["/blog/vfs-monopoly-history", "/blog/goa-property-investment-risks", "/blog/ahmedabad-gift-city-investment"];
+  const blogPostsPreview: BlogPost[] = featuredHrefs.map(href => blogPosts.find(p => p.href === href)).filter((p): p is BlogPost => Boolean(p));
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -73,7 +65,7 @@ const FAQ = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
               Resources
             </h1>
-            <p className="text-xl text-muted-foreground max-w-5xl">Still need help?</p>
+            <p className="text-xl text-muted-foreground max-w-5xl">Still need help with India-side tasks? Sign up for our services and we'll kindly do the Needful.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -87,8 +79,7 @@ const FAQ = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {guides.slice(0, 3).map(guide => (
-                    <div key={guide.title} className="group">
+                  {guides.slice(0, 3).map(guide => <div key={guide.title} className="group">
                       <Link to={guide.href} className="block">
                         <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
                           {guide.title}
@@ -97,8 +88,7 @@ const FAQ = () => {
                           {guide.description}
                         </p>
                       </Link>
-                    </div>
-                  ))}
+                    </div>)}
                   <Link to="/guides" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
                     View all guides
                     <ExternalLink className="w-4 h-4" />
@@ -117,8 +107,7 @@ const FAQ = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {faqs.map(faq => (
-                    <div key={faq.title} className="group">
+                  {faqs.map(faq => <div key={faq.title} className="group">
                       <Link to={faq.href} className="block">
                         <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
                           {faq.title}
@@ -127,8 +116,7 @@ const FAQ = () => {
                           {faq.description}
                         </p>
                       </Link>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -143,8 +131,7 @@ const FAQ = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {blogPostsPreview.map(post => (
-                    <div key={post.title} className="group">
+                  {blogPostsPreview.map(post => <div key={post.title} className="group">
                       <Link to={post.href} className="block">
                         <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
                           {post.title}
@@ -153,8 +140,7 @@ const FAQ = () => {
                           {post.description}
                         </p>
                       </Link>
-                    </div>
-                  ))}
+                    </div>)}
                   <Link to="/blog" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
                     View all articles
                     <ExternalLink className="w-4 h-4" />
