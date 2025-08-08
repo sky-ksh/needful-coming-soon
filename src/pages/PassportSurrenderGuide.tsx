@@ -6,38 +6,37 @@ import Navigation from "@/components/Navigation";
 
 const PassportSurrenderGuide = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
-      <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
+    <div className="min-h-screen bg-background">
+      <header className="border-b bg-card">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Button variant="ghost" size="sm" className="flex items-center gap-2 text-brand-purple hover:text-brand-purple/80" asChild>
-              <Link to="/faq">
+          <div className="flex items-center gap-4 mb-4">
+            <Button variant="ghost" size="sm" asChild>
+              <Link to="/faq" className="flex items-center gap-2">
                 <ArrowLeft className="w-4 h-4" />
                 Back to FAQ
               </Link>
             </Button>
-            <Navigation variant="inline" />
           </div>
+          <Navigation />
         </div>
       </header>
 
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="animate-fade-in mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
+      <main className="container mx-auto px-4 py-8 max-w-4xl">
+        <div className="space-y-8">
+          {/* Title Section */}
+          <div className="text-center space-y-4">
+            <h1 className="text-4xl font-bold text-foreground">
               Passport Surrender Guide
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Note: Many official sources use "renunciation" and "surrender" application interchangeably. As of May, 2025, the "Surrender" application is all you need to successfully obtain an OCI Card. The steps for the Surrender application are below.
             </p>
           </div>
-
-          <div className="space-y-8">
             {/* Step 1 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">1</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">1</span>
                   Create SEVA Account
                 </CardTitle>
               </CardHeader>
@@ -55,10 +54,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 2 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">2</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">2</span>
                   Apply for Surrender
                 </CardTitle>
               </CardHeader>
@@ -77,10 +76,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 3 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">3</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">3</span>
                   Fill Renunciation Form
                 </CardTitle>
               </CardHeader>
@@ -107,10 +106,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 4 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">4</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">4</span>
                   Create VFS Account
                 </CardTitle>
               </CardHeader>
@@ -128,10 +127,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 5 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">5</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">5</span>
                   Customer Profile & Shipping
                 </CardTitle>
               </CardHeader>
@@ -150,10 +149,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 6 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">6</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">6</span>
                   Compile Required Documents
                 </CardTitle>
               </CardHeader>
@@ -192,10 +191,10 @@ const PassportSurrenderGuide = () => {
             </Card>
 
             {/* Step 7 */}
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-2xl text-brand-purple">
-                  <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold">7</span>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">7</span>
                   Mail Documents
                 </CardTitle>
               </CardHeader>
@@ -212,13 +211,12 @@ const PassportSurrenderGuide = () => {
                 </Button>
               </CardContent>
             </Card>
-          </div>
 
           {/* Community Section */}
           <div className="mt-16 mb-8">
-            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+            <Card>
               <CardHeader>
-                <CardTitle className="text-2xl text-brand-purple">
+                <CardTitle className="text-2xl text-foreground">
                   Need a Hand with the Rest?
                 </CardTitle>
               </CardHeader>
@@ -235,7 +233,7 @@ const PassportSurrenderGuide = () => {
             </Card>
           </div>
         </div>
-      </section>
+      </main>
 
       <footer className="border-t bg-muted/30 py-8 px-4">
         <div className="container mx-auto">
@@ -243,8 +241,8 @@ const PassportSurrenderGuide = () => {
             <p className="text-muted-foreground">
               Kindly doing the needful so you don't have to.
             </p>
-            <Link to="/" className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline">
-              Back to Home
+            <Link to="/faq" className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline">
+              Back to FAQ
             </Link>
           </div>
         </div>
