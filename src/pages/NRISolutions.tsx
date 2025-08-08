@@ -195,6 +195,9 @@ const NRISolutions = () => {
                   })} placeholder="Tell us more about your requirements..." rows={4} />
                     </div>}
 
+                  <p className="text-xs text-muted-foreground mb-3">
+                    By signing up, you agree to receiving important email updates from Needful.
+                  </p>
                   <Button type="submit" className="w-full" size="lg">
                     Join the Needful Community
                     <ArrowRight className="w-4 h-4 ml-2" />
