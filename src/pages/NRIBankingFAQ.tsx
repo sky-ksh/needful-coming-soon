@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow, TableCaption } from "@/components/ui/table";
 import { ArrowLeft, Check, Minus } from "lucide-react";
@@ -319,19 +320,25 @@ const NRIBankingFAQ = () => {
 
           </Accordion>
 
-          {/* Still need help callout */}
-          <div className="mt-12 p-8 bg-gradient-to-r from-brand-purple/5 to-brand-purple/10 border border-brand-purple/20 rounded-2xl shadow-lg">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Still need help?</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                <Link 
-                  to="/nri-solutions" 
-                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
-                >
-                  Join our community
-                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
-              </p>
-            </div>
+          {/* Community Section */}
+          <div className="mt-16 mb-8">
+            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-2xl text-brand-purple">
+                  Need a Hand with the Rest?
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground">
+                  This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
+                </p>
+                <Button variant="brand" asChild>
+                  <Link to="/nri-solutions">
+                    Join the Needful Community →
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
