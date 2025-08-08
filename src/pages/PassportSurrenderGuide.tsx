@@ -213,7 +213,7 @@ const PassportSurrenderGuide = () => {
             </Card>
 
           {/* Community Section */}
-          <div className="mt-16 mb-8 space-y-6">
+          <div className="mt-16 mb-8 bg-muted/30 rounded-lg p-8 space-y-6">
             <h2 className="text-2xl font-bold text-foreground">
               Need a Hand with the Rest?
             </h2>
