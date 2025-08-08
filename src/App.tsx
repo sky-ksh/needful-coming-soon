@@ -21,6 +21,7 @@ import OCIGuide from "./pages/OCIGuide";
 import VFSMonopolyHistory from "./pages/blog/VFSMonopolyHistory";
 import GoaPropertyInvestmentRisks from "./pages/blog/GoaPropertyInvestmentRisks";
 import AhmedabadGiftCityInvestment from "./pages/blog/AhmedabadGiftCityInvestment";
+import OCIApplicationTiming from "./pages/blog/OCIApplicationTiming";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/blog/vfs-monopoly-history" element={<VFSMonopolyHistory />} />
             <Route path="/blog/goa-property-investment-risks" element={<GoaPropertyInvestmentRisks />} />
             <Route path="/blog/ahmedabad-gift-city-investment" element={<AhmedabadGiftCityInvestment />} />
+            <Route path="/blog/oci-application-timing" element={<OCIApplicationTiming />} />
             <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
