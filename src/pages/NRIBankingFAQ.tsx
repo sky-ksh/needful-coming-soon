@@ -121,7 +121,7 @@ const NRIBankingFAQ = () => {
             >
               <Link to="/faq">
                 <ArrowLeft className="w-4 h-4" />
-                Back to FAQ
+                Back to Resources
               </Link>
             </Button>
             <Navigation variant="inline" />
