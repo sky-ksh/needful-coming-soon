@@ -413,7 +413,14 @@ const NRITaxesGuide = () => {
                       </Button>
                       {" "}(self-declaration online)
                     </li>
-                    <li>Form 15CB (signed by a CA if transfer exceeds ₹5 lakhs)</li>
+                    <li>
+                      <Button variant="link" className="p-0 h-auto text-brand-purple" asChild>
+                        <a href="https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form15cb-um" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1">
+                          Form 15CB <ExternalLink className="h-3 w-3" />
+                        </a>
+                      </Button>
+                      {" "}(signed by a CA if transfer exceeds ₹5 lakhs)
+                    </li>
                   </ul>
                 </div>
 
