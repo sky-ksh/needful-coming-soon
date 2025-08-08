@@ -125,14 +125,14 @@ const PANCardGuide = () => {
           </Card>
 
 
-          {/* Step 5 */}
+          {/* Step 4 */}
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                   4
                 </span>
-                Add Contact & Address
+                Add Contact Details and Select AO Code
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -141,32 +141,15 @@ const PANCardGuide = () => {
                 <li><strong>Residential Address</strong> (Indian or foreign)</li>
                 <li><strong>Communication Address</strong> → This is where your PAN will be delivered (can be different from residential)</li>
                 <li><strong>Phone Number</strong> (foreign numbers accepted)</li>
-                <li><strong>Email</strong> (must be correct — your e-PAN will be sent here)</li>
+                <li><strong>Email</strong> (must be correct. Your e-PAN will be sent here)</li>
               </ul>
-            </CardContent>
-          </Card>
-
-          {/* Step 6 */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  5
-                </span>
-                Select AO Code
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p>All PANs are linked to an <strong>AO Code</strong> — this is your tax circle.</p>
-              
+              <p>All PANs are linked to an <strong>AO Code</strong>; this is your tax circle.</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>If you live in <strong>India</strong>, select your state and city, then pick the matching AO code</li>
                 <li>If you're an <strong>NRI using an Indian address</strong>, do the same for your Indian city</li>
                 <li>If you're applying with a <strong>foreign address</strong> (as an NRI or OCI), choose a code under <strong>"International Taxation"</strong> (usually in Delhi or Mumbai)</li>
               </ul>
-              
               <p>Look for keywords like <strong>"International"</strong>, <strong>"NRI"</strong>, or your country name in the AO description.</p>
-              
               <Alert>
                 <AlertDescription>
                   <strong>Common Pitfall:</strong> Choosing an AO code that doesn't match your address type (e.g., using a random Indian code while applying with a US address) can delay your application. If unsure, use the built-in search tool in the form.
@@ -180,7 +163,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  6
+                  5
                 </span>
                 Upload Documents
               </CardTitle>
@@ -236,7 +219,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  7
+                  6
                 </span>
                 Pay the Fee
               </CardTitle>
@@ -256,7 +239,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  8
+                  7
                 </span>
                 Sign & Submit
               </CardTitle>
@@ -303,7 +286,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  9
+                  8
                 </span>
                 Tracking Status & Getting Your PAN
               </CardTitle>
