@@ -25,6 +25,7 @@ import OCIApplicationTiming from "./pages/blog/OCIApplicationTiming";
 import GiftCityNRIOpportunities from "./pages/blog/GiftCityNRIOpportunities";
 import Tier2CitiesInvestmentOpportunities from "./pages/blog/Tier2CitiesInvestmentOpportunities";
 import NRIBankingFAQ from "./pages/NRIBankingFAQ";
+import NRITaxesGuide from "./pages/NRITaxesGuide";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
             <Route path="/faq/nri-banking" element={<NRIBankingFAQ />} />
+            <Route path="/faq/nri-taxes" element={<NRITaxesGuide />} />
             <Route path="/faq/pan-card-guide" element={<PANCardGuide />} />
             <Route path="/guides/oci-guide" element={<OCIGuide />} />
             <Route path="*" element={<NotFound />} />
