@@ -98,23 +98,21 @@ const OCIApplicationTiming = () => {
             
             <p>Here's what you unlock:</p>
             
-            <ul>
-              <li>
-                <strong>Visa-Free, Indefinite Access</strong>: Say goodbye to last-minute scrambles for Indian visas. Attend weddings, school reunions, and spontaneous trips to surprise grandparents.
-              </li>
-              <li>
-                <strong>Stay as Long as You Want</strong>: No more reporting to the police for extended stays. Park yourself in India for weeks, months, or years: no extra permissions.
-              </li>
-              <li>
-                <strong>Work, Invest, and Study</strong>: With the OCI, you can work (no separate employment visa needed), start a business, buy property (residential or commercial, not farmland, sorry), open NRE/NRO accounts, and invest in India's booming markets.
-              </li>
-              <li>
-                <strong>Educational Opportunities</strong>: Your kids get access to NRI quota seats in Indian colleges and can take entrance exams under the NRI category. Options = peace of mind!
-              </li>
-              <li>
-                <strong>Practical Privileges</strong>: There are smaller advantages, including paying domestic ticket fares and entry fees like a local (instead of "foreigner" prices). In everyday life, an OCI holder is almost indistinguishable from a regular NRI.
-              </li>
-            </ul>
+            <p>
+              <strong>Visa-Free, Indefinite Access:</strong> Say goodbye to last-minute scrambles for Indian visas. Attend weddings, school reunions, and spontaneous trips to surprise grandparents.
+            </p>
+            <p>
+              <strong>Stay as Long as You Want:</strong> No more reporting to the police for extended stays. Park yourself in India for weeks, months, or years: no extra permissions.
+            </p>
+            <p>
+              <strong>Work, Invest, and Study:</strong> With the OCI, you can work (no separate employment visa needed), start a business, buy property (residential or commercial, not farmland, sorry), open NRE/NRO accounts, and invest in India's booming markets.
+            </p>
+            <p>
+              <strong>Educational Opportunities:</strong> Your kids get access to NRI quota seats in Indian colleges and can take entrance exams under the NRI category. Options = peace of mind!
+            </p>
+            <p>
+              <strong>Practical Privileges:</strong> There are smaller advantages, including paying domestic ticket fares and entry fees like a local (instead of "foreigner" prices). In everyday life, an OCI holder is almost indistinguishable from a regular NRI.
+            </p>
             
             <p>
               On the flip side, you can't vote, buy agricultural land (unless you inherit), or run for public office. But chances are, these aren't deal-breakers.
@@ -124,17 +122,15 @@ const OCIApplicationTiming = () => {
             
             <p>Let's be honest: paperwork can turn even the bravest NRI into a procrastinator. We've all either said or heard the following:</p>
             
-            <ul>
-              <li>
-                <strong>"I don't go to India that often."</strong> That's today, but plans change. You might have elderly parents, family emergencies, business trips, or just the spontaneous urge to rediscover your roots. With the OCI, you're always ready.
-              </li>
-              <li>
-                <strong>"The process is a bureaucratic pain."</strong> Yes, the application is famous for its quirky instructions and scan-and-upload rituals. Reddit is full of head-scratching tales about missing information and wild card photo specs. But with updated rules and digital upgrades, it's smoother now than ever (and way shorter than waiting at the DMV). Plus, you have us at <a href="https://needfulusa.com/" target="_blank" rel="noopener noreferrer">Needful</a> to help!
-              </li>
-              <li>
-                <strong>"I'll do it when I really need it."</strong> Classic. But all it takes is one unexpected opportunity or emergency to realize you needed the OCI *yesterday*. Processing times run 4–8 weeks—and that's if all your papers are perfect.
-              </li>
-            </ul>
+            <p>
+              <strong>"I don't go to India that often."</strong> That's today, but plans change. You might have elderly parents, family emergencies, business trips, or just the spontaneous urge to rediscover your roots. With the OCI, you're always ready.
+            </p>
+            <p>
+              <strong>"The process is a bureaucratic pain."</strong> Yes, the application is famous for its quirky instructions and scan-and-upload rituals. Reddit is full of head-scratching tales about missing information and wild card photo specs. But with updated rules and digital upgrades, it's smoother now than ever (and way shorter than waiting at the DMV). Plus, you have us at <a href="https://needfulusa.com/" target="_blank" rel="noopener noreferrer">Needful</a> to help!
+            </p>
+            <p>
+              <strong>"I'll do it when I really need it."</strong> Classic. But all it takes is one unexpected opportunity or emergency to realize you needed the OCI *yesterday*. Processing times run 4–8 weeks—and that's if all your papers are perfect.
+            </p>
             
             <p>Bottom line: putting it off only feels "safe" until life comes at you fast.</p>
 
@@ -142,23 +138,21 @@ const OCIApplicationTiming = () => {
             
             <p>If you need a push, here's your sign. The sooner you get your OCI, the more you stand to gain, plain and simple:</p>
             
-            <ul>
-              <li>
-                <strong>India's Growth Story, Front Row Seat</strong>: The world's fastest-growing major economy (GDP is forecast at 6–7% through 2026) is full of business, career, and investment opportunities. As an OCI holder, you join the action, not just watch from afar.
-              </li>
-              <li>
-                <strong>Flexibility and Peace of Mind</strong>: An OCI in your back pocket means you can move, invest, travel, or even stay long-term, all with ease. Having work rights and residency options in both India and another country gives you options that will increasingly become scarce.
-              </li>
-              <li>
-                <strong>Family Benefits</strong>: Once you get your OCI, your spouse and kids can get theirs through you. The sooner you act, the easier it is to sort out their paperwork, too.
-              </li>
-              <li>
-                <strong>Life is Unpredictable</strong>: Emergencies, sudden opportunities, or the next family function—be ready, no matter what.
-              </li>
-              <li>
-                <strong>It Simply Makes Life Easier</strong>: Want to work remotely from Goa? Help your parents? Take a spontaneous trip to India? The OCI busts down the red tape, replacing it with an open door.
-              </li>
-            </ul>
+            <p>
+              <strong>India's Growth Story, Front Row Seat:</strong> The world's fastest-growing major economy (GDP is forecast at 6–7% through 2026) is full of business, career, and investment opportunities. As an OCI holder, you join the action, not just watch from afar.
+            </p>
+            <p>
+              <strong>Flexibility and Peace of Mind:</strong> An OCI in your back pocket means you can move, invest, travel, or even stay long-term, all with ease. Having work rights and residency options in both India and another country gives you options that will increasingly become scarce.
+            </p>
+            <p>
+              <strong>Family Benefits:</strong> Once you get your OCI, your spouse and kids can get theirs through you. The sooner you act, the easier it is to sort out their paperwork, too.
+            </p>
+            <p>
+              <strong>Life is Unpredictable:</strong> Emergencies, sudden opportunities, or the next family function—be ready, no matter what.
+            </p>
+            <p>
+              <strong>It Simply Makes Life Easier:</strong> Want to work remotely from Goa? Help your parents? Take a spontaneous trip to India? The OCI busts down the red tape, replacing it with an open door.
+            </p>
 
             <h2 className="text-2xl font-semibold text-foreground mt-10">Making the OCI Journey Suck Less</h2>
             
