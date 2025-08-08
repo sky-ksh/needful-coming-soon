@@ -235,6 +235,11 @@ const OCIGuide = () => {
                   </CollapsibleContent>
                 </Collapsible>
               </div>
+
+              <div className="p-4 bg-muted rounded-lg space-y-2">
+                <p className="text-sm text-muted-foreground"><strong>Notarization Note:</strong> For notarizations, we recommend simply going to a UPS near you. Remote online notarizations are not accepted as the notary must be in the same jurisdiction as your application.</p>
+                <p className="text-sm text-muted-foreground"><strong>Apostille Note:</strong> Many people find this to be a headache. We recommend following the government instructions of your state, but if you don't mind paying up you can pay for apostille services near you. Just use Google, but be mindful that these services can often cost upwards of $200 per document.</p>
+              </div>
             </CardContent>
           </Card>
 
