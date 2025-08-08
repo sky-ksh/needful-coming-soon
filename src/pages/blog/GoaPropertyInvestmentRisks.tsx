@@ -158,7 +158,7 @@ const GoaPropertyInvestmentRisks = () => {
             </p>
             <h3 className="text-xl font-semibold text-foreground mt-6">3. Market saturation in North Goa</h3>
             <p>
-              Villa prices in marquee areas have plateaued in 2025 after years of sharp growth. Assagao is already maxed out, with limited inventory, sky-high prices, and slower future appreciation.
+              Villa prices in marquee areas have plateaued in 2025 after years of sharp growth. Our real-estate expert Nitya Somani says areas like Assagao are already maxed out, with limited inventory, sky-high prices, and slower future appreciation.
             </p>
             <h3 className="text-xl font-semibold text-foreground mt-6">4. Maintenance and liquidity</h3>
             <p>
@@ -168,7 +168,7 @@ const GoaPropertyInvestmentRisks = () => {
             <h2 className="text-2xl font-semibold text-foreground mt-10">Smarter Ways to Play the Goa Market</h2>
             <h3 className="text-xl font-semibold text-foreground mt-6">1. Leverage the land plotting trend</h3>
             <p>
-              Instead of chasing raw agricultural land, buy developed plots in approved projects — developments where the developer has already secured conversion and approvals.
+              Instead of chasing raw agricultural land, Somani recommends buying developed plots in approved projects where the developer has already secured conversion and approvals.
             </p>
             <p>
               This is hot in Sindhudurg and Goa’s fringe areas, where developers build shared infrastructure (roads, clubhouses) and sell serviced plots. This model offers lower capital outlay, flexibility for future construction, and often easier resale.
