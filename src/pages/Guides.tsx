@@ -9,7 +9,7 @@ const Guides = () => {
     {
       title: "Passport Surrender Guide",
       description: "Complete guide for surrendering your Indian passport after obtaining foreign citizenship",
-      href: "/faq/passport-surrender"
+      href: "/guides/passport-surrender"
     },
     {
       title: "OCI Guide",
@@ -19,12 +19,12 @@ const Guides = () => {
     {
       title: "PAN Card Guide",
       description: "Easy instructions for PAN card applications and corrections",
-      href: "/faq/pan-card-guide"
+      href: "/guides/pan-card-guide"
     },
     {
       title: "NRI Taxes Guide",
       description: "Tax obligations and filing requirements for Non-Resident Indians",
-      href: "/faq/nri-taxes"
+      href: "/guides/nri-taxes"
     }
   ];
 

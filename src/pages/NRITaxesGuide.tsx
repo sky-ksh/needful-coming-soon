@@ -31,7 +31,7 @@ const NRITaxesGuide = () => {
       l.setAttribute("rel", "canonical");
       return l;
     }) as HTMLLinkElement;
-    canonical.setAttribute("href", `${window.location.origin}/faq/nri-taxes`);
+    canonical.setAttribute("href", `${window.location.origin}/guides/nri-taxes`);
   }, []);
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -39,9 +39,9 @@ const NRITaxesGuide = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4 mb-4">
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/faq" className="flex items-center gap-2">
+              <Link to="/guides" className="flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
-                Back to FAQ
+                Back to Guides
               </Link>
             </Button>
           </div>
@@ -463,12 +463,12 @@ const NRITaxesGuide = () => {
           <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-2xl text-brand-purple">
-                Need a Hand with the Rest?
+                Still Need Help?
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-foreground">
-                This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
+                Sign up for our services and receive customized support for your India-side pains.
               </p>
               <Button variant="brand" asChild>
                 <Link to="/nri-solutions">

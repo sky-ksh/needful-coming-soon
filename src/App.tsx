@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
@@ -50,13 +50,16 @@ const App = () => (
             <Route path="/blog/oci-application-timing" element={<OCIApplicationTiming />} />
             <Route path="/blog/gift-city-nri-opportunities" element={<GiftCityNRIOpportunities />} />
             <Route path="/blog/tier-2-cities-investment-opportunities" element={<Tier2CitiesInvestmentOpportunities />} />
-            <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
+            <Route path="/guides/passport-surrender" element={<PassportSurrenderGuide />} />
+            <Route path="/guides/nri-taxes" element={<NRITaxesGuide />} />
+            <Route path="/guides/pan-card-guide" element={<PANCardGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
             <Route path="/faq/nri-banking" element={<NRIBankingFAQ />} />
-            <Route path="/faq/nri-taxes" element={<NRITaxesGuide />} />
-            <Route path="/faq/pan-card-guide" element={<PANCardGuide />} />
             <Route path="/guides/oci-guide" element={<OCIGuide />} />
+            <Route path="/faq/passport-surrender" element={<Navigate to="/guides/passport-surrender" replace />} />
+            <Route path="/faq/nri-taxes" element={<Navigate to="/guides/nri-taxes" replace />} />
+            <Route path="/faq/pan-card-guide" element={<Navigate to="/guides/pan-card-guide" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

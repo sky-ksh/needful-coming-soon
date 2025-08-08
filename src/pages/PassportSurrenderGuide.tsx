@@ -9,9 +9,9 @@ const PassportSurrenderGuide = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4 mb-4">
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/faq" className="flex items-center gap-2">
+              <Link to="/guides" className="flex items-center gap-2">
                 <ArrowLeft className="w-4 h-4" />
-                Back to FAQ
+                Back to Guides
               </Link>
             </Button>
           </div>
@@ -209,18 +209,24 @@ const PassportSurrenderGuide = () => {
             </Card>
 
           {/* Community Section */}
-          <div className="mt-16 mb-8 bg-muted/30 rounded-lg p-8 space-y-6">
-            <h2 className="text-2xl font-bold text-primary">
-              Need a Hand with the Rest?
-            </h2>
-            <p className="text-foreground text-lg">
-              This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
-            </p>
-            <Button variant="brand" asChild>
-              <Link to="/nri-solutions">
-                Join the Needful Community →
-              </Link>
-            </Button>
+          <div className="mt-16 mb-8">
+            <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-2xl text-brand-purple">
+                  Still Need Help?
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground">
+                  Sign up for our services and receive customized support for your India-side pains.
+                </p>
+                <Button variant="brand" asChild>
+                  <Link to="/nri-solutions">
+                    Join the Needful Community →
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </main>

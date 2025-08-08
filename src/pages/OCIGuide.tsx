@@ -52,7 +52,7 @@ const OCIGuide = () => {
           <Alert>
             <AlertDescription>
               <strong>Note:</strong> This guide assumes you have already surrendered your Indian passport, which is a prerequisite for OCI applicants who formerly had Indian passports. If you haven't yet surrendered your Indian passport, please refer to our{" "}
-              <Link to="/faq/passport-surrender" className="text-primary hover:underline">
+              <Link to="/guides/passport-surrender" className="text-primary hover:underline">
                 Passport Surrender guide
               </Link>.
             </AlertDescription>
