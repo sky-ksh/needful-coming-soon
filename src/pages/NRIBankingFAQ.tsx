@@ -325,12 +325,12 @@ const NRIBankingFAQ = () => {
             <Card className="border-0 shadow-lg bg-background/80 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl text-brand-purple">
-                  Need a Hand with the Rest?
+                  Still need help?
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-foreground">
-                  This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
+                  Join our community to get answers to all your India paperwork, tax-filing and investment-related questions. We do the needful so you don't have to.
                 </p>
                 <Button variant="brand" asChild>
                   <Link to="/nri-solutions">
