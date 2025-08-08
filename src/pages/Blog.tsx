@@ -3,8 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, FileText, ExternalLink, Calendar, Clock, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, type BlogPost } from "@/data/blogPosts";
 const Blog = () => {
+  // Order first three posts to match FAQ Blog column
+  const featuredHrefs = ["/blog/vfs-monopoly-history", "/blog/goa-property-investment-risks", "/blog/ahmedabad-gift-city-investment"];
+  const featured: BlogPost[] = featuredHrefs
+    .map((href) => blogPosts.find((p) => p.href === href))
+    .filter((p): p is BlogPost => Boolean(p));
+  const rest = blogPosts.filter((p) => !featuredHrefs.includes(p.href));
+  const orderedPosts = [...featured, ...rest];
+
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -33,7 +41,7 @@ const Blog = () => {
           </div>
 
           <div className="grid gap-6">
-            {blogPosts.map(post => <Card key={post.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
+            {orderedPosts.map(post => <Card key={post.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-background/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
