@@ -214,23 +214,19 @@ const PassportSurrenderGuide = () => {
 
           {/* Community Section */}
           <div className="mt-16 mb-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">
-                  Need a Hand with the Rest?
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-foreground">
-                  This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
-                </p>
-                <Button variant="brand" asChild>
-                  <Link to="/nri-solutions">
-                    Join the Needful Community →
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-brand-purple">
+                Need a Hand with the Rest?
+              </h2>
+              <p className="text-foreground">
+                This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
+              </p>
+              <Button variant="brand" asChild>
+                <Link to="/nri-solutions">
+                  Join the Needful Community →
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </main>
