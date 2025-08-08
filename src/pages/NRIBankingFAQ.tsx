@@ -159,9 +159,6 @@ const NRIBankingFAQ = () => {
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="prose max-w-none">
-                  <div className="mb-4 text-muted-foreground">
-                    We’ve summarized the most important differences below based on the reference you shared.
-                  </div>
                   <div className="rounded-xl border bg-card text-card-foreground shadow-sm overflow-hidden">
                     <Table className="text-base">
                       <TableHeader>
