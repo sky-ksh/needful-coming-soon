@@ -39,12 +39,6 @@ export const blogPosts: BlogPost[] = [
     href: "/blog/ahmedabad-gift-city-investment",
   },
   {
-    title: "Bangalore's Startup Scene in 2025: Real Signals Amid the Noise",
-    description:
-      "Separating genuine opportunities from hype in India's Silicon Valley",
-    href: "/blog/bangalore-startup-scene-2025",
-  },
-  {
     title:
       "India's Tier 2 Cities Are Booming. Here's Where the Smart Money Is Going",
     description:
