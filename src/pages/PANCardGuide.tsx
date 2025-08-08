@@ -105,40 +105,15 @@ const PANCardGuide = () => {
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                   3
                 </span>
-                Fill Personal Details
+                Fill Personal Details & Choose PAN Delivery Type
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p>Enter:</p>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Name (as per passport or Aadhaar)</li>
-                <li>Gender</li>
-                <li>Date of Birth</li>
-                <li>Nationality</li>
-                <li>Parent names (Father's name is mandatory)</li>
-                <li>Aadhaar Number (only if you're choosing e-KYC or e-Sign in form 49A)</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          {/* Step 4 */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  4
-                </span>
-                Choose PAN Delivery Type
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p><strong>Do you want a physical PAN card or just an e-PAN?</strong></p>
-              
+              <p>Enter your personal details and choose whether you want a physical PAN or just an e-PAN.</p>
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>e-PAN only</strong> → Free PDF sent by email. Fast and sufficient for most needs like opening bank accounts or investing.</li>
                 <li><strong>Physical PAN card</strong> → Laminated card sent by post. Choose this if you want a hard copy for in-person verification.</li>
               </ul>
-              
               <div>
                 <h4 className="font-semibold mb-3">Fee breakdown:</h4>
                 <ul className="list-disc list-inside space-y-2">
@@ -149,12 +124,13 @@ const PANCardGuide = () => {
             </CardContent>
           </Card>
 
+
           {/* Step 5 */}
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  5
+                  4
                 </span>
                 Add Contact & Address
               </CardTitle>
@@ -175,7 +151,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  6
+                  5
                 </span>
                 Select AO Code
               </CardTitle>
@@ -204,7 +180,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  7
+                  6
                 </span>
                 Upload Documents
               </CardTitle>
@@ -260,7 +236,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  8
+                  7
                 </span>
                 Pay the Fee
               </CardTitle>
@@ -280,7 +256,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  9
+                  8
                 </span>
                 Sign & Submit
               </CardTitle>
@@ -327,7 +303,7 @@ const PANCardGuide = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
-                  10
+                  9
                 </span>
                 Tracking Status & Getting Your PAN
               </CardTitle>
