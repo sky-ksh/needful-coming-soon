@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const GoaPropertyInvestmentRisks = () => {
   // Basic SEO setup without extra deps
@@ -92,10 +92,6 @@ const GoaPropertyInvestmentRisks = () => {
       <main className="py-12 px-4">
         <article className="container mx-auto max-w-3xl prose prose-invert prose-headings:text-foreground prose-p:text-muted-foreground">
           <header className="mb-8">
-            <div className="flex items-center gap-3 text-sm text-muted-foreground mb-3">
-              <BookOpen className="w-4 h-4" />
-              <span>Published: Aug 8, 2025</span>
-            </div>
             <h1 className="text-3xl md:text-4xl font-bold text-foreground">
               Why Everyone from Dubai to New Jersey Is Buying Property in Goa (and Why You Should Be Cautious)
             </h1>
