@@ -214,7 +214,7 @@ const PassportSurrenderGuide = () => {
 
           {/* Community Section */}
           <div className="mt-16 mb-8 bg-muted/30 rounded-lg p-8 space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">
+            <h2 className="text-2xl font-bold text-primary">
               Need a Hand with the Rest?
             </h2>
             <p className="text-foreground text-lg">
