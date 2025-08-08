@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     title:
-      "Why Everyone from Dubai to New Jersey Is Buying Property in Goa (and Why You Be Cautious)",
+      "Why Everyone from Dubai to New Jersey Is Buying Property in Goa (and Why You Should Be Cautious)",
     description:
       "The global rush to Goa's real estate market and the risks you need to consider",
     href: "/blog/goa-property-investment-risks",
