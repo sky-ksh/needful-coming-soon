@@ -18,7 +18,7 @@ import PANCardFAQ from "./pages/PANCardFAQ";
 import PANCardGuide from "./pages/PANCardGuide";
 import PassportSurrenderGuide from "./pages/PassportSurrenderGuide";
 import OCIGuide from "./pages/OCIGuide";
-
+import VFSMonopolyHistory from "./pages/blog/VFSMonopolyHistory";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -35,6 +35,7 @@ const App = () => (
             <Route path="/guides" element={<Guides />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/vfs-monopoly-history" element={<VFSMonopolyHistory />} />
             <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />

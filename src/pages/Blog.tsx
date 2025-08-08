@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Blog = () => {
   const blogPosts = [{
-    title: "Will VFS's Reign Ever End? A History of the Monopoly We All Hate",
+    title: "The Long Reign of VFS in Indian Paperwork: History, Lessons, and What’s Next",
     description: "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",
     href: "/blog/vfs-monopoly-history"
   }, {
