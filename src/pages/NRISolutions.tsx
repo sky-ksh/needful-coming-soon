@@ -33,6 +33,9 @@ const NRISolutions = () => {
   }, {
     value: "other",
     label: "I need help with something else"
+  }, {
+    value: "community",
+    label: "Nothing in particular; just interested in joining the NRI community!"
   }];
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
