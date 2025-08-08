@@ -264,24 +264,22 @@ const OCIApplicationsFAQ = () => {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-11" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
-              <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
-                Still need help?
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-6">
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground leading-relaxed">
-                    <Link 
-                      to="/nri-solutions" 
-                      className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors"
-                    >
-                      Join our community
-                    </Link> to get answers to all your India paperwork, tax-filing and investment-related questions. We do the needful so you don't have to.
-                  </p>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
           </Accordion>
+
+          {/* Still need help callout */}
+          <div className="mt-12 p-8 bg-gradient-to-r from-brand-purple/5 to-brand-purple/10 border border-brand-purple/20 rounded-2xl shadow-lg">
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-foreground mb-4">Still need help?</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                <Link 
+                  to="/nri-solutions" 
+                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+                >
+                  Join our community
+                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
