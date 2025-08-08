@@ -6,6 +6,12 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Bangalore's Startup Scene in 2025: Real Signals Amid the Noise",
+    description:
+      "How Bangalore moved beyond buzzwords to cement its position as India's leading startup hub with global rankings and deep institutional investment",
+    href: "/blog/bangalore-startup-scene-2025",
+  },
+  {
     title: "The Long Reign of VFS in Indian Paperwork: History, Lessons, and What’s Next",
     description:
       "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",

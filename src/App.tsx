@@ -26,6 +26,7 @@ import GiftCityNRIOpportunities from "./pages/blog/GiftCityNRIOpportunities";
 import Tier2CitiesInvestmentOpportunities from "./pages/blog/Tier2CitiesInvestmentOpportunities";
 import NRIBankingFAQ from "./pages/NRIBankingFAQ";
 import NRITaxesGuide from "./pages/NRITaxesGuide";
+import BangaloreStartupScene2025 from "./pages/blog/BangaloreStartupScene2025";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/guides" element={<Guides />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/bangalore-startup-scene-2025" element={<BangaloreStartupScene2025 />} />
             <Route path="/blog/vfs-monopoly-history" element={<VFSMonopolyHistory />} />
             <Route path="/blog/goa-property-investment-risks" element={<GoaPropertyInvestmentRisks />} />
             <Route path="/blog/ahmedabad-gift-city-investment" element={<AhmedabadGiftCityInvestment />} />
