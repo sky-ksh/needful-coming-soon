@@ -215,10 +215,10 @@ const PassportSurrenderGuide = () => {
           {/* Community Section */}
           <div className="mt-16 mb-8 bg-muted/30 rounded-lg p-8 space-y-6">
             <h2 className="text-2xl font-bold text-primary">
-              Need a Hand with the Rest?
+              Still Need Help?
             </h2>
             <p className="text-foreground text-lg">
-              This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
+              Sign up for our services and receive customized support for your India-side pains.
             </p>
             <Button variant="brand" asChild>
               <Link to="/nri-solutions">
