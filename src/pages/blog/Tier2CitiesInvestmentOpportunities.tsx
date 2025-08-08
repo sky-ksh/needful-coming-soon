@@ -205,6 +205,20 @@ const Tier2CitiesInvestmentOpportunities = () => {
               India's Tier 2 cities are no longer playing catch-up; they are defining the next phase of the country's economic story. With a strong mix of affordability, emerging infrastructure and supportive policy, they present a compelling alternative to over-saturated metros. The shift of both consumers and companies toward these cities is the signal of a broader transformation, one that can be more distributed, inclusive, and sustainable. As businesses begin to adopt a "Tier 2 first" approach and talent chooses to stay rooted in these regions, the spotlight on India's smaller cities will only grow brighter. The smart money isn't just moving in; it's betting big on the future being built in Tier 2 cities.
             </p>
           </article>
+          
+          {/* CTA Section */}
+          <div className="mt-16">
+            <div className="bg-muted/30 border rounded-2xl p-8 text-center">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Enjoyed this article? Want to learn more about upcoming opportunities in India? <Link 
+                  to="/nri-solutions" 
+                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+                >
+                  Join our community
+                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
 

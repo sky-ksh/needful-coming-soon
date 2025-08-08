@@ -134,6 +134,20 @@ const AhmedabadGiftCityInvestment = () => {
               The smart money isn't betting the farm on GIFT City hype alone. It's picking assets in Ahmedabad that make sense even without the IFSC halo. If the big vision plays out, those positions become a double win.
             </p>
           </article>
+          
+          {/* CTA Section */}
+          <div className="mt-16">
+            <div className="bg-muted/30 border rounded-2xl p-8 text-center">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Enjoyed this article? Want to learn more about upcoming opportunities in India? <Link 
+                  to="/nri-solutions" 
+                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+                >
+                  Join our community
+                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
 

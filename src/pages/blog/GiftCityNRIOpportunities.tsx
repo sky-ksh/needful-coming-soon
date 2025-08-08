@@ -220,6 +220,20 @@ const GiftCityNRIOpportunities = () => {
               And hey, if it sounds a tad complicated—or if you just want an agent who'll "do the needful" with as little headache as possible—<a href="https://needfulusa.com/" target="_blank" rel="noopener noreferrer">Needful</a> is always in your corner. We've navigated the maze (and the Reddit rants), so you don't have to.
             </p>
           </article>
+          
+          {/* CTA Section */}
+          <div className="mt-16">
+            <div className="bg-muted/30 border rounded-2xl p-8 text-center">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Enjoyed this article? Want to learn more about upcoming opportunities in India? <Link 
+                  to="/nri-solutions" 
+                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+                >
+                  Join our community
+                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
 

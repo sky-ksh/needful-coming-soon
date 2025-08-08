@@ -160,6 +160,20 @@ const OCIApplicationTiming = () => {
               And if you're still breaking into a cold sweat just picturing the application, you're not alone. That's one of the reasons we created Needful: to help you access Indian benefits and opportunities. We're stationed to be your co-pilots, whether you want to use our free DIY guides, consultations or more involved help in completing your India-side documentation.
             </p>
           </article>
+          
+          {/* CTA Section */}
+          <div className="mt-16">
+            <div className="bg-muted/30 border rounded-2xl p-8 text-center">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Enjoyed this article? Want to learn more about upcoming opportunities in India? <Link 
+                  to="/nri-solutions" 
+                  className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+                >
+                  Join our community
+                </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
 

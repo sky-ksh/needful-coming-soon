@@ -123,6 +123,20 @@ const BangaloreStartupScene2025 = () => {
             </p>
           </section>
         </article>
+        
+        {/* CTA Section */}
+        <section className="container mx-auto max-w-3xl mt-16 px-4">
+          <div className="bg-muted/30 border rounded-2xl p-8 text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Enjoyed this article? Want to learn more about upcoming opportunities in India? <Link 
+                to="/nri-solutions" 
+                className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4 transition-colors font-medium"
+              >
+                Join our community
+              </Link> to get answers to all your India paperwork, tax-filing and investment-related questions.
+            </p>
+          </div>
+        </section>
       </main>
 
       <footer className="border-t bg-muted/30 py-8 px-4">
