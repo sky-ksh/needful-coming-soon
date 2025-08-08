@@ -25,7 +25,7 @@ const PANCardFAQ = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
-              FAQ for PAN Card
+              FAQ for PAN Card Applications
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
               Everything you need to know about getting a PAN card as an NRI or OCI.
