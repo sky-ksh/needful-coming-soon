@@ -57,7 +57,7 @@ const NRITaxesGuide = () => {
             <h1 className="text-4xl font-bold text-foreground">
               Needful's NRI Tax Filing Guide
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Understand NRI tax obligations, residency status, income taxation, and filing requirements in India.</p>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">Understand NRI tax obligations, residency status, income taxation, and filing requirements in India.</p>
           </div>
 
           {/* Section 1 */}
