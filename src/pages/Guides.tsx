@@ -54,7 +54,7 @@ const Guides = () => {
               </h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Step-by-step guides to help you navigate Indian paperwork processes independently.
+              Step-by-step guides for common paperwork NRIs encounter.
             </p>
           </div>
 
