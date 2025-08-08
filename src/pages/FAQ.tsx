@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, FileText, HelpCircle, ExternalLink, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import { blogPosts } from "@/data/blogPosts";
 const FAQ = () => {
   const guides = [{
     title: "Passport Surrender Guide",
@@ -43,22 +44,7 @@ const FAQ = () => {
     href: "/faq/nri-banking"
   }];
 
-  const blogPosts = [{
-    title: "Will VFS's Reign Ever End? A History of the Monopoly We All Hate",
-    description: "An in-depth look at VFS Global's dominance in visa processing and its impact on travelers worldwide",
-    type: "blog",
-    href: "/blog/vfs-monopoly-history"
-  }, {
-    title: "What is GIFT City and how can NRIs take advantage of it?",
-    description: "Understanding India's financial hub and the opportunities it presents for overseas Indians",
-    type: "blog",
-    href: "/blog/gift-city-nri-opportunities"
-  }, {
-    title: "You've Been Putting Off That OCI Application. When Is the Right Time?",
-    description: "Strategic timing considerations for your Overseas Citizen of India application",
-    type: "blog",
-    href: "/blog/oci-application-timing"
-  }];
+  const blogPostsPreview = blogPosts.slice(0, 3);
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -149,7 +135,7 @@ const FAQ = () => {
                 </h2>
               </div>
               <div className="space-y-4">
-                {blogPosts.map(post => (
+                {blogPostsPreview.map(post => (
                   <div key={post.title} className="group">
                     <Link to={post.href} className="block">
                       <h3 className="text-lg font-semibold text-foreground group-hover:text-brand-purple transition-colors mb-2">
