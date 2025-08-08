@@ -129,10 +129,6 @@ const FAQ = () => {
                       </Link>
                     </div>
                   ))}
-                  <Link to="/faqs" className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-medium">
-                    View all FAQs
-                    <ExternalLink className="w-4 h-4" />
-                  </Link>
                 </div>
               </CardContent>
             </Card>
