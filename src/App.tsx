@@ -15,6 +15,7 @@ import Blog from "./pages/Blog";
 import OCIApplicationsFAQ from "./pages/OCIApplicationsFAQ";
 import NotFound from "./pages/NotFound";
 import PANCardFAQ from "./pages/PANCardFAQ";
+import PANCardGuide from "./pages/PANCardGuide";
 import PassportSurrenderGuide from "./pages/PassportSurrenderGuide";
 import OCIGuide from "./pages/OCIGuide";
 
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/faq/passport-surrender" element={<PassportSurrenderGuide />} />
             <Route path="/faq/oci-applications" element={<OCIApplicationsFAQ />} />
             <Route path="/faq/pan-card" element={<PANCardFAQ />} />
+            <Route path="/faq/pan-card-guide" element={<PANCardGuide />} />
             <Route path="/guides/oci-guide" element={<OCIGuide />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
