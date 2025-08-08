@@ -82,7 +82,7 @@ const AhmedabadGiftCityInvestment = () => {
       <main className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <article className="prose prose-lg max-w-none">
-            <h1 className="text-4xl md:text-5xl font-bold text-brand-purple mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Ahmedabad Is Quietly Becoming the GIFT City Feeder Town. Should You Bet on It?
             </h1>
             
