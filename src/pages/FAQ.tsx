@@ -73,7 +73,7 @@ const FAQ = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
               Resources
             </h1>
-            <p className="text-xl text-muted-foreground max-w-5xl">Find step-by-step guides, frequently asked questions, and helpful articles for NRIs.</p>
+            <p className="text-xl text-muted-foreground max-w-5xl">Find step-by-step guides, frequently asked questions, and helpful articles for NRIs. Need help with something else? <Link to="/nri-solutions" className="text-brand-purple hover:text-brand-purple/80 underline underline-offset-4">Join our community</Link> and we'll kindly do the needful.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
