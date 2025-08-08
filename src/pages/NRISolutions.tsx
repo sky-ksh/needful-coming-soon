@@ -115,6 +115,15 @@ const NRISolutions = () => {
             <p className="text-2xl md:text-3xl font-semibold text-foreground/90 leading-relaxed font-sans mb-6">Your gateway to India. Simplified for NRIs worldwide.</p>
 
             <p className="text-lg text-muted-foreground max-w-3xl mb-8">We're building a service agent for NRIs anywhere. Whether you need help with visa appointments, banking, or real estate, our platform serves to be your best friend, combining neat tech with real human help so you can get things done in India. No matter where you live.</p>
+            
+            <div className="mb-12">
+              <Button asChild size="lg" className="text-lg px-8 py-6">
+                <Link to="/faq">
+                  Resources
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
