@@ -15,11 +15,6 @@ const FAQ = () => {
     type: "guide",
     href: "/guides/oci-guide"
   }, {
-    title: "Passport Renewal Guide",
-    description: "Complete walkthrough for renewing your Indian passport",
-    type: "guide",
-    href: "/faq/passport-renewal"
-  }, {
     title: "PAN Card Guide",
     description: "Easy instructions for PAN card applications and corrections",
     type: "guide",
