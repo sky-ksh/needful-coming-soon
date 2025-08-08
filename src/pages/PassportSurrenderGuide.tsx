@@ -224,7 +224,7 @@ const PassportSurrenderGuide = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-foreground">
-                  This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free, and you'll get resources, reminders, and help when you need it.
+                  This is just one item on your India paperwork to-do list. If you'd like help with OCI, PAN, banking, or getting anything done in India, join the Needful Community. It's free - you'll get resources, reminders, and help when you need it.
                 </p>
                 <Button variant="brand" asChild>
                   <Link to="/nri-solutions">
