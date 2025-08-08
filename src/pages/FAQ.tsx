@@ -90,7 +90,7 @@ const FAQ = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
               Resources
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">Find step-by-step guides, frequently asked questions, and helpful articles about Indian paperwork.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl">Find step-by-step guides, frequently asked questions, and helpful articles for NRIs.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
