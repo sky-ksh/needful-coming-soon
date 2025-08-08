@@ -131,7 +131,7 @@ const NRISolutions = () => {
             <p className="text-lg text-muted-foreground max-w-2xl">
               Be the first to access our platform once it's ready. In the meantime, sign up for white-glove support for your most common India-side pains. You can also access our helpful{" "}
               <Link 
-                to="/faq" 
+                to="/resources" 
                 className="text-muted-foreground/80 hover:text-muted-foreground transition-colors underline underline-offset-4"
               >
                 guides and resources
@@ -219,7 +219,7 @@ const NRISolutions = () => {
               Kindly doing the needful so you don't have to.
             </p>
             <Link 
-              to="/faq" 
+              to="/resources" 
               className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
             >
               Resources

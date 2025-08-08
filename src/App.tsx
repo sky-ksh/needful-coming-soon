@@ -39,10 +39,11 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
-            <Route path="/faq" element={<FAQ />} />
+            <Route path="/resources" element={<FAQ />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/faq" element={<Navigate to="/resources" replace />} />
             <Route path="/blog/bangalore-startup-scene-2025" element={<BangaloreStartupScene2025 />} />
             <Route path="/blog/vfs-monopoly-history" element={<VFSMonopolyHistory />} />
             <Route path="/blog/goa-property-investment-risks" element={<GoaPropertyInvestmentRisks />} />
