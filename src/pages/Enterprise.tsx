@@ -100,7 +100,7 @@ const Enterprise = () => {
               With Needful.
             </h2>
 
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl lg:max-w-none">
               We embed into your NRI-facing workflows so you can delight your
               global customers with the speed and polish they expect.
             </p>
