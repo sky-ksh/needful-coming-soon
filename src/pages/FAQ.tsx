@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, FileText, HelpCircle, ExternalLink, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, type BlogPost } from "@/data/blogPosts";
 const FAQ = () => {
   const guides = [{
     title: "Passport Surrender Guide",
@@ -44,7 +44,14 @@ const FAQ = () => {
     href: "/faq/nri-banking"
   }];
 
-  const blogPostsPreview = blogPosts.slice(0, 3);
+  const featuredHrefs = [
+    "/blog/vfs-monopoly-history",
+    "/blog/goa-property-investment-risks",
+    "/blog/ahmedabad-gift-city-investment",
+  ];
+  const blogPostsPreview: BlogPost[] = featuredHrefs
+    .map((href) => blogPosts.find((p) => p.href === href))
+    .filter((p): p is BlogPost => Boolean(p));
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
