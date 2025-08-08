@@ -319,7 +319,7 @@ const NRIBankingFAQ = () => {
 
             <AccordionItem value="item-8" className="border-0 shadow-lg bg-background/80 backdrop-blur-sm rounded-lg">
               <AccordionTrigger className="text-xl font-bold text-foreground hover:text-brand-purple transition-colors px-6 py-4 hover:no-underline text-left">
-                Need help with something else?
+                Still need help?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <div className="prose prose-lg max-w-none">
