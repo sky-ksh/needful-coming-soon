@@ -29,7 +29,7 @@ const OCIApplicationsFAQ = () => {
               FAQ for OCI Applications
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Everything you need to know about the Overseas Citizen of India application process.
+              Answers to common questions about the notoriously complicated Overseas Citizen of India application process.
             </p>
           </div>
 
