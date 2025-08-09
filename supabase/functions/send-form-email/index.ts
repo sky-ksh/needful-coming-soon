@@ -62,18 +62,31 @@ const handler = async (req: Request): Promise<Response> => {
         throw new Error('Failed to save form data');
       }
 
-      // Send thank you email
-      const emailResponse = await resend.emails.send({
-        from: "Needful <info@needfulusa.com>",
-        to: [nriData.email],
-        subject: "Welcome to the Needful Community!",
-        html: `
+      // Map service to label and build email content
+      const serviceMap: Record<string, string> = {
+        'oci': 'OCI Application',
+        'pan': 'PAN Card',
+        'nri-account': 'NRI Account Opening',
+        'other': 'A Custom Request',
+        'community': 'Community',
+      };
+
+      const serviceLabel = serviceMap[nriData.service] ?? nriData.service;
+
+      let emailHtml = '';
+
+      if (nriData.service === 'community') {
+        emailHtml = `
           <h1>Thank you for joining, ${nriData.name}!</h1>
-          <p>We're excited to have you in the Needful community. We received your request for help with ${nriData.service === 'Something else' ? 'a custom request' : `<strong>${nriData.service}</strong>`}.</p>
+          <p>We look forward to staying in touch and fostering an NRI community together. In the meantime, don't hesitate to reach out by replying to this email if you need help with NRI life stuff.</p>
+          <p>Best regards,<br>The Needful Team</p>
+        `;
+      } else if (nriData.service === 'oci') {
+        emailHtml = `
+          <h1>Thank you for joining, ${nriData.name}!</h1>
+          <p>We're excited to have you in the Needful community. We received your request for help with the following service: <strong>${serviceLabel}</strong>.</p>
           <p>Our team will review your submission and get back to you soon with personalized assistance.</p>
-          
-          <p>If you'd like help with your OCI application, we can assist! To speed up the process, please tell us more about who's applying (for e.g. minor, previous Indian citizen, spouse of an Indian citizen, etc.) and send us copies of your documents. Copies of the below documents are typically needed for OCI applications:</p>
-          
+          <p>To speed up the process, you can reply to this email by telling us more about who's applying (for e.g. minor, previous Indian citizen, spouse of an Indian citizen, etc.) and sending us copies of your documents. Copies of the below documents are typically needed for OCI applications:</p>
           <ol>
             <li>Copy of your current passport (info page + amendments page)</li>
             <li>Copy of your previous Indian passport if available (info page + last two pages)</li>
@@ -88,14 +101,26 @@ const handler = async (req: Request): Promise<Response> => {
             <li>Spouse's passport copy, if applying as a spouse</li>
             <li>Address of your current employer or college</li>
           </ol>
-          
           <p>Please also share your current mailing address to which you will want to receive your OCI card.</p>
-          
           <p>In the meantime, feel free to reply to this email or reach out to us at info@needfulusa.com if you have any questions.</p>
           <p>Best regards,<br>The Needful Team</p>
-        `,
-      });
+        `;
+      } else {
+        emailHtml = `
+          <h1>Thank you for joining, ${nriData.name}!</h1>
+          <p>We're excited to have you in the Needful community. We received your request for help with the following service: <strong>${serviceLabel}</strong>.</p>
+          <p>Our team will review your submission and get back to you soon with personalized assistance.</p>
+          <p>In the meantime, feel free to reply to this email or reach out to us at info@needfulusa.com if you have any questions.</p>
+          <p>Best regards,<br>The Needful Team</p>
+        `;
+      }
 
+      const emailResponse = await resend.emails.send({
+        from: "Needful <info@needfulusa.com>",
+        to: [nriData.email],
+        subject: "Welcome to the Needful Community!",
+        html: emailHtml,
+      });
       console.log("NRI email sent successfully:", emailResponse);
 
       // Send notification email to company
