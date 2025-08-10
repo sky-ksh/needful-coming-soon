@@ -1,1 +1,4 @@
 project_id = "ieoqhrvblvxppwcdbvrm"
+
+[functions.nri-unsubscribe]
+verify_jwt = false

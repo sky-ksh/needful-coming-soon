@@ -62,6 +62,32 @@ const handler = async (req: Request): Promise<Response> => {
         throw new Error('Failed to save form data');
       }
 
+      // Create a subscriber entry to generate an unsubscribe token
+      let unsubscribeUrl = '';
+      try {
+        const { data: subscriber, error: subscriberError } = await supabase
+          .from('nri_subscribers')
+          .insert({
+            full_name: nriData.name,
+            email: nriData.email,
+            phone_number: nriData.phone || null,
+            help_with: nriData.service,
+            service_type: nriData.service,
+            description: nriData.description || null,
+          })
+          .select('unsubscribe_token')
+          .single();
+
+        if (subscriberError) {
+          console.error('Subscriber insert error:', subscriberError);
+        } else if (subscriber?.unsubscribe_token) {
+          const baseUrl = Deno.env.get('SUPABASE_URL') ?? '';
+          unsubscribeUrl = `${baseUrl}/functions/v1/nri-unsubscribe?token=${subscriber.unsubscribe_token}`;
+        }
+      } catch (e) {
+        console.error('Unexpected error creating subscriber:', e);
+      }
+
       // Map service to label and build email content
       const serviceMap: Record<string, string> = {
         'oci': 'OCI Application',
@@ -72,7 +98,6 @@ const handler = async (req: Request): Promise<Response> => {
       };
 
       const serviceLabel = serviceMap[nriData.service] ?? nriData.service;
-
       let emailHtml = '';
 
       if (nriData.service === 'community') {
@@ -116,14 +141,22 @@ const handler = async (req: Request): Promise<Response> => {
         `;
       }
 
+      const finalEmailHtml = `
+        ${emailHtml}
+        <hr style="margin:16px 0;border:none;border-top:1px solid #eee" />
+        <p style="font-size:12px;color:#666;line-height:1.6">
+          You're receiving this because you engaged with Needful. You can reply to this email any time.
+          ${unsubscribeUrl ? `<br /><a href="${unsubscribeUrl}" target="_blank" rel="noopener">Unsubscribe</a>` : ''}
+        </p>
+      `;
+
       const emailResponse = await resend.emails.send({
         from: "Needful <info@needfulusa.com>",
         to: [nriData.email],
         subject: "Welcome to the Needful Community!",
-        html: emailHtml,
+        html: finalEmailHtml,
       });
       console.log("NRI email sent successfully:", emailResponse);
-
       // Send notification email to company
       const notificationResponse = await resend.emails.send({
         from: "Needful <info@needfulusa.com>",
