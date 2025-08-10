@@ -11,11 +11,26 @@ const supabaseAdmin = createClient(
   Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
 );
 
-function html(body: string, status = 200) {
-  return new Response(body, {
+function html(inner: string, status = 200) {
+  const content = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unsubscribe | Needful</title>
+  <meta name="description" content="Confirm your email unsubscribe from Needful." />
+  <link rel="canonical" href="https://ieoqhrvblvxppwcdbvrm.functions.supabase.co/nri-unsubscribe" />
+  <style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:#111;background:#fff}</style>
+</head>
+<body>
+${inner}
+</body>
+</html>`;
+  return new Response(content, {
     status,
     headers: {
-      "Content-Type": "text/html; charset=utf-8",
+      "Content-Type": "text/html",
+      "Cache-Control": "no-store",
       ...corsHeaders,
     },
   });
