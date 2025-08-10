@@ -77,9 +77,10 @@ const handler = async (req: Request): Promise<Response> => {
 
       if (nriData.service === 'community') {
         emailHtml = `
-          <h1>Thank you for joining, ${nriData.name}!</h1>
-          <p>We look forward to staying in touch and fostering an NRI community together. In the meantime, don't hesitate to reach out by replying to this email if you need help with NRI life stuff.</p>
-          <p>Best regards,<br>The Needful Team</p>
+          <h1>Thanks for joining us, ${nriData.name}!</h1>
+          <p>As we build our platform, we're excited to foster a vibrant NRI community where we can share tips, insights, and stories to make life across borders easier.</p>
+          <p>In the meantime, if you ever need help with anything NRI-related, just hit \"reply\" and we'll be here for you.</p>
+          <p>Best Regards,<br>The Needful Team</p>
         `;
       } else if (nriData.service === 'oci') {
         emailHtml = `
@@ -103,7 +104,7 @@ const handler = async (req: Request): Promise<Response> => {
           </ol>
           <p>Please also share your current mailing address to which you will want to receive your OCI card.</p>
           <p>In the meantime, feel free to reply to this email or reach out to us at info@needfulusa.com if you have any questions.</p>
-          <p>Best regards,<br>The Needful Team</p>
+          <p>Best Regards,<br>The Needful Team</p>
         `;
       } else {
         emailHtml = `
@@ -111,7 +112,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p>We're excited to have you in the Needful community. We received your request for help with the following service: <strong>${serviceLabel}</strong>.</p>
           <p>Our team will review your submission and get back to you soon with personalized assistance.</p>
           <p>In the meantime, feel free to reply to this email or reach out to us at info@needfulusa.com if you have any questions.</p>
-          <p>Best regards,<br>The Needful Team</p>
+          <p>Best Regards,<br>The Needful Team</p>
         `;
       }
 
@@ -178,7 +179,7 @@ const handler = async (req: Request): Promise<Response> => {
             <li>Schedule a call to discuss how Needful can transform your NRI customer experience</li>
           </ul>
           <p>Questions? Simply reply to this email or reach out to us at info@needfulusa.com.</p>
-          <p>Best regards,<br>The Needful Enterprise Team</p>
+          <p>Best Regards,<br>The Needful Enterprise Team</p>
         `,
       });
 
