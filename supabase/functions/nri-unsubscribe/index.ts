@@ -29,8 +29,9 @@ ${inner}
   return new Response(content, {
     status,
     headers: {
-      "Content-Type": "text/html",
+      "Content-Type": "text/html; charset=utf-8",
       "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
       ...corsHeaders,
     },
   });
