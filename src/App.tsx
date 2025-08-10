@@ -27,6 +27,7 @@ import Tier2CitiesInvestmentOpportunities from "./pages/blog/Tier2CitiesInvestme
 import NRIBankingFAQ from "./pages/NRIBankingFAQ";
 import NRITaxesGuide from "./pages/NRITaxesGuide";
 import BangaloreStartupScene2025 from "./pages/blog/BangaloreStartupScene2025";
+import Unsubscribed from "./pages/Unsubscribed";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -61,6 +62,7 @@ const App = () => (
             <Route path="/faq/passport-surrender" element={<Navigate to="/guides/passport-surrender" replace />} />
             <Route path="/faq/nri-taxes" element={<Navigate to="/guides/nri-taxes" replace />} />
             <Route path="/faq/pan-card-guide" element={<Navigate to="/guides/pan-card-guide" replace />} />
+            <Route path="/unsubscribed" element={<Unsubscribed />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
