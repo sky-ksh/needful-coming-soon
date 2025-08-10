@@ -46,7 +46,7 @@ const handler = async (req: Request): Promise<Response> => {
       const nriData = formData as NRIFormData;
       
       // Store in Supabase
-      const { error: dbError } = await supabase
+      const { data: signup, error: dbError } = await supabase
         .from('nri_community_signups')
         .insert({
           full_name: nriData.name,
@@ -55,12 +55,19 @@ const handler = async (req: Request): Promise<Response> => {
           help_with: nriData.service,
           service_type: nriData.service,
           description: nriData.description || null
-        });
+        })
+        .select('unsubscribe_token')
+        .single();
 
       if (dbError) {
         console.error('Database error:', dbError);
         throw new Error('Failed to save form data');
       }
+
+      const baseUrl = Deno.env.get('SUPABASE_URL') ?? '';
+      const unsubscribeUrl = signup?.unsubscribe_token
+        ? `${baseUrl}/functions/v1/nri-unsubscribe?token=${signup.unsubscribe_token}`
+        : '';
 
       // Map service to label and build email content
       const serviceMap: Record<string, string> = {
@@ -120,6 +127,7 @@ const handler = async (req: Request): Promise<Response> => {
         <hr style="margin:16px 0;border:none;border-top:1px solid #eee" />
         <p style="font-size:12px;color:#666;line-height:1.6">
           You're receiving this because you engaged with Needful. You can reply to this email any time.
+          ${unsubscribeUrl ? '<br /><a href="' + unsubscribeUrl + '" target="_blank" rel="noopener">Unsubscribe from future emails</a>' : ''}
         </p>
       `;
 

@@ -55,7 +55,7 @@ serve(async (req) => {
     }
 
     const { error } = await supabaseAdmin
-      .from('nri_subscribers')
+      .from('nri_community_signups')
       .delete()
       .eq('unsubscribe_token', token);
 
