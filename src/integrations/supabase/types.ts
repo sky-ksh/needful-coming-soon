@@ -63,6 +63,7 @@ export type Database = {
           id: string
           phone_number: string | null
           service_type: string | null
+          unsubscribe_token: string
           updated_at: string
         }
         Insert: {
@@ -74,6 +75,7 @@ export type Database = {
           id?: string
           phone_number?: string | null
           service_type?: string | null
+          unsubscribe_token?: string
           updated_at?: string
         }
         Update: {
@@ -85,6 +87,7 @@ export type Database = {
           id?: string
           phone_number?: string | null
           service_type?: string | null
+          unsubscribe_token?: string
           updated_at?: string
         }
         Relationships: []

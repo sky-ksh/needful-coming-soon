@@ -3,3 +3,5 @@ project_id = "ieoqhrvblvxppwcdbvrm"
 [functions.nri-unsubscribe]
 verify_jwt = false
 
+[functions.send-form-email]
+verify_jwt = false
