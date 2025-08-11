@@ -111,9 +111,7 @@ const NRISolutions = () => {
       <section className="pt-16 pb-4 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple mb-6">
-              NRI Solutions
-            </h1>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple mb-6">Needful: NRI Solutions</h1>
 
             <p className="text-2xl md:text-3xl font-semibold text-foreground/90 leading-relaxed font-sans mb-6">Your gateway to India. Simplified for NRIs worldwide.</p>
 
@@ -130,10 +128,7 @@ const NRISolutions = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Be the first to access our platform once it's ready. In the meantime, sign up for white-glove support for your most common India-side pains. You can also access our helpful{" "}
-              <Link 
-                to="/resources" 
-                className="text-muted-foreground/80 hover:text-muted-foreground transition-colors underline underline-offset-4"
-              >
+              <Link to="/resources" className="text-muted-foreground/80 hover:text-muted-foreground transition-colors underline underline-offset-4">
                 guides and resources
               </Link>{" "}
               for free.
@@ -218,10 +213,7 @@ const NRISolutions = () => {
             <p className="text-muted-foreground">
               Kindly doing the needful so you don't have to.
             </p>
-            <Link 
-              to="/resources" 
-              className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline"
-            >
+            <Link to="/resources" className="text-sm text-muted-foreground/80 hover:text-muted-foreground transition-colors underline-offset-4 hover:underline">
               Resources
             </Link>
           </div>
