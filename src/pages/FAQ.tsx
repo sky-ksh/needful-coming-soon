@@ -62,9 +62,7 @@ const FAQ = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-7xl">
           <div className="animate-fade-in mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">
-              Resources
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-purple mb-6">Needful's Resources</h1>
             <p className="text-xl text-muted-foreground max-w-5xl">Still need help with India-side tasks? {""}
               <Link to="/nri-solutions" className="text-brand-purple hover:text-brand-purple/80 underline-offset-4 hover:underline">Sign up for our services</Link>{" "}
               and we'll kindly do the Needful.
