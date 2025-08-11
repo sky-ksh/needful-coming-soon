@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unsubscribed | Needful</title>
+  <meta name="description" content="Unsubscribe confirmation for Needful emails. Manage your subscription preferences." />
+  <link rel="canonical" href="https://needfulusa.com/unsubscribed" />
+  <link rel="icon" href="/lovable-uploads/26c6a515-7b54-443e-b3cb-26c826d20f7c.png" type="image/png" />
+  <style>
+    :root{
+      --bg:#fff;--fg:#0f172a;--muted:#475569;--max:48rem
+    }
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#0b1220;--fg:#e5e7eb;--muted:#94a3b8}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--fg)}
+    main{max-width:var(--max);margin:0 auto;padding:4rem 1rem}
+    h1{font-size:1.875rem;line-height:2.25rem;margin:0 0 .5rem}
+    p{line-height:1.7;margin:.5rem 0}
+    .muted{color:var(--muted);font-size:.925rem}
+    header, main, article, footer{display:block}
+  </style>
+</head>
+<body>
+  <header hidden>
+    <h1>Unsubscribed</h1>
+  </header>
+  <main>
+    <article aria-labelledby="title">
+      <h1 id="title">Unsubscribe confirmation</h1>
+      <p id="message">You're unsubscribed. You will no longer receive emails at this address.</p>
+      <p class="muted">If this was a mistake, you can re‑subscribe by submitting the form again.</p>
+    </article>
+  </main>
+  <script>
+    (function(){
+      try{
+        const params=new URLSearchParams(location.search);
+        const status=(params.get('status')||'success').toLowerCase();
+        const map={
+          'success': "You're unsubscribed. You will no longer receive emails at this address.",
+          'missing-token': "We couldn't verify your request (missing token).",
+          'invalid-token': "This unsubscribe link is invalid or expired.",
+          'server-error': "We couldn't process your request right now. Please try again later.",
+          'unexpected-error': "Unexpected error. Please try again later.",
+        };
+        document.getElementById('message').textContent = map[status] || map.success;
+      }catch(e){/* no-op */}
+    })();
+  </script>
+</body>
+</html>
