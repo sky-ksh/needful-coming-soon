@@ -46,13 +46,13 @@ serve(async (req) => {
     const token = url.searchParams.get('token')?.trim();
 
     if (!token) {
-      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed?status=missing-token', ...corsHeaders } });
+      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed', ...corsHeaders } });
     }
 
     // Basic UUID v4 validation
     const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
     if (!uuidRegex.test(token)) {
-      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed?status=invalid-token', ...corsHeaders } });
+      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed', ...corsHeaders } });
     }
 
     const { error } = await supabaseAdmin
@@ -62,12 +62,12 @@ serve(async (req) => {
 
     if (error) {
       console.error('Unsubscribe delete error:', error);
-      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed?status=server-error', ...corsHeaders } });
+      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed', ...corsHeaders } });
     }
 
-      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed?status=success', ...corsHeaders } });
+      return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed', ...corsHeaders } });
   } catch (e) {
     console.error('Unsubscribe handler error:', e);
-    return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed?status=unexpected-error', ...corsHeaders } });
+    return new Response(null, { status: 303, headers: { Location: 'https://needfulusa.com/unsubscribed', ...corsHeaders } });
   }
 });
