@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import Navigation from "@/components/Navigation";
 const NRISolutions = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,6 +43,10 @@ const NRISolutions = () => {
   }];
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Prevent multiple submissions
+    if (isSubmitting) return;
+    
     if (!formData.name || !formData.email || !formData.service) {
       toast({
         title: "Please fill in all required fields",
@@ -50,6 +55,8 @@ const NRISolutions = () => {
       });
       return;
     }
+    
+    setIsSubmitting(true);
     try {
       const {
         error
@@ -81,6 +88,8 @@ const NRISolutions = () => {
         description: "Please try again or contact support.",
         variant: "destructive"
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
   const features = [{
@@ -199,10 +208,10 @@ const NRISolutions = () => {
                   <p className="text-xs text-muted-foreground mb-3">
                     By signing up, you agree to receiving important email updates from Needful.
                   </p>
-                  <Button type="submit" className="w-full" size="lg">
-                    Join the Needful Community
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                   <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                     {isSubmitting ? "Submitting..." : "Join the Needful Community"}
+                     <ArrowRight className="w-4 h-4 ml-2" />
+                   </Button>
                 </form>
               </CardContent>
             </Card>
