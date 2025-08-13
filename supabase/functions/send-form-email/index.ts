@@ -71,6 +71,7 @@ const handler = async (req: Request): Promise<Response> => {
 
       // Map service to label and build email content
       const serviceMap: Record<string, string> = {
+        'wealth-management': 'Wealth Management & Real Estate',
         'oci': 'OCI Application',
         'pan': 'PAN Card',
         'nri-account': 'NRI Account Opening',
@@ -86,6 +87,14 @@ const handler = async (req: Request): Promise<Response> => {
           <h1>Thanks for joining us, ${nriData.name}!</h1>
           <p>As we build our platform, we're excited to foster a vibrant NRI community where we can share tips, insights, and stories to make life across borders easier.</p>
           <p>In the meantime, if you ever need help with anything NRI-related, just hit \"reply\" and we'll be here for you.</p>
+          <p>Best Regards,<br>The Needful Team</p>
+        `;
+      } else if (nriData.service === 'wealth-management') {
+        emailHtml = `
+          <h1>Thank you for joining, ${nriData.name}!</h1>
+          <p>We're excited to have you in the Needful community! We received your request for help with the following service: Wealth Management & Real Estate.</p>
+          <p>We're excited to transform investing in India with groundbreaking technology and real, human on-the-ground help. We know that Indian real estate can be daunting, especially from the outside, and look forward to building services centered around your biggest pain points.</p>
+          <p>In the meantime, please feel free to reply to this email describing your portfolio / needs or sharing any feedback you'd like to give. We'll kindly do the Needful.</p>
           <p>Best Regards,<br>The Needful Team</p>
         `;
       } else if (nriData.service === 'oci') {

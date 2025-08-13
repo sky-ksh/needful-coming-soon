@@ -22,6 +22,9 @@ const NRISolutions = () => {
     toast
   } = useToast();
   const services = [{
+    value: "wealth-management",
+    label: "Wealth Management & Real Estate"
+  }, {
     value: "oci",
     label: "OCI Application"
   }, {
