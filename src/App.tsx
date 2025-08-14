@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import Enterprise from "./pages/Enterprise";
 import NRISolutions from "./pages/NRISolutions";
+import NRIBeta from "./pages/NRIBeta";
 import FAQ from "./pages/FAQ";
 import Guides from "./pages/Guides";
 import FAQs from "./pages/FAQs";
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
+            <Route path="/nri-beta" element={<NRIBeta />} />
             <Route path="/resources" element={<FAQ />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/faqs" element={<FAQs />} />
