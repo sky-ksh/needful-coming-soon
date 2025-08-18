@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 280 20% 96%;
-    --foreground: 245 15% 35%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 245 15% 35%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 245 15% 35%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 245 58% 48%;
-    --primary-glow: 280 100% 70%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-dark: 217 91% 50%;
+    --primary-glow: 217 100% 75%;
 
-    --secondary: 280 30% 90%;
-    --secondary-foreground: 245 15% 35%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 280 15% 92%;
-    --muted-foreground: 245 10% 55%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 280 30% 90%;
-    --accent-foreground: 245 15% 35%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 280 20% 88%;
-    --input: 280 20% 88%;
-    --ring: 262 83% 58%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 217 91% 60%;
 
     /* Needful Brand Colors */
-    --brand-purple: 262 83% 58%;
-    --brand-purple-dark: 245 58% 48%;
-    --brand-purple-light: 280 100% 70%;
+    --brand-primary: 217 91% 60%;
+    --brand-primary-dark: 217 91% 50%;
+    --brand-primary-light: 217 100% 75%;
     
     /* Gradients */
-    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-purple-dark)), hsl(var(--brand-purple)), hsl(var(--brand-purple-light)));
-    --gradient-background: linear-gradient(180deg, hsl(280 30% 98%), hsl(280 20% 96%));
-    --gradient-logo: linear-gradient(135deg, hsl(230 45% 25%), hsl(280 70% 60%));
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-primary-dark)), hsl(var(--brand-primary)), hsl(var(--brand-primary-light)));
+    --gradient-background: linear-gradient(180deg, hsl(0 0% 6%), hsl(0 0% 9%));
+    --gradient-logo: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 100% 75%));
     
     /* Shadows and Effects */
-    --shadow-brand: 0 20px 60px -10px hsl(var(--brand-purple) / 0.3);
-    --shadow-glow: 0 0 40px hsl(var(--brand-purple-light) / 0.4);
+    --shadow-brand: 0 20px 60px -10px hsl(var(--brand-primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--brand-primary-light) / 0.4);
     
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
