@@ -67,7 +67,7 @@ const Index = () => {
                 NRI Solutions
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+            <Button variant="default" size="lg" className="group bg-primary hover:bg-primary/90" asChild>
               <Link to="/enterprise">
                 <Building2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 Business Solutions
