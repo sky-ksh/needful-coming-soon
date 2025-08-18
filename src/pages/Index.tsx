@@ -17,9 +17,9 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="mb-8 animate-fade-in flex items-center justify-center gap-4">
             <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-2xl px-0">
-              <span className="text-black font-bold text-6xl md:text-7xl lg:text-8xl">N</span>
+              <span className="text-black font-bold text-7xl">N</span>
             </div>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground">
+            <h1 className="text-7xl font-bold text-foreground">
               Needful
             </h1>
           </div>
