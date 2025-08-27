@@ -46,7 +46,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="mb-12 animate-fade-in">
             <div className="max-w-4xl">
-              <p className="text-xl md:text-2xl text-foreground leading-relaxed text-left">Founded by a team of Indian immigrant students and professors at MIT, Needful is an AI platform that simplifies your financial and personal ties to India.</p>
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed text-left">Founded by a team of Indian immigrant students and professors at MIT, Needful is an AI-powered wealth platform that h</p>
             </div>
           </div>
 
