@@ -17,10 +17,10 @@ All colors MUST be HSL.
     --popover: 42 21% 98%;
     --popover-foreground: 25 20% 15%;
 
-    --primary: 25 85% 55%;
+    --primary: 217 91% 55%;
     --primary-foreground: 42 21% 98%;
-    --primary-dark: 25 85% 45%;
-    --primary-glow: 25 95% 70%;
+    --primary-dark: 217 91% 45%;
+    --primary-glow: 217 95% 70%;
 
     --secondary: 42 15% 85%;
     --secondary-foreground: 25 20% 15%;
@@ -36,17 +36,17 @@ All colors MUST be HSL.
 
     --border: 42 15% 80%;
     --input: 42 15% 88%;
-    --ring: 25 85% 55%;
+    --ring: 217 91% 55%;
 
     /* Needful Brand Colors */
-    --brand-primary: 25 85% 55%;
-    --brand-primary-dark: 25 85% 45%;
-    --brand-primary-light: 25 95% 70%;
+    --brand-primary: 217 91% 55%;
+    --brand-primary-dark: 217 91% 45%;
+    --brand-primary-light: 217 95% 70%;
     
     /* Gradients */
     --gradient-brand: linear-gradient(135deg, hsl(var(--brand-primary-dark)), hsl(var(--brand-primary)), hsl(var(--brand-primary-light)));
     --gradient-background: linear-gradient(180deg, hsl(42 21% 95%), hsl(42 21% 98%));
-    --gradient-logo: linear-gradient(135deg, hsl(25 85% 55%), hsl(25 95% 70%));
+    --gradient-logo: linear-gradient(135deg, hsl(217 91% 55%), hsl(217 95% 70%));
     
     /* Shadows and Effects */
     --shadow-brand: 0 20px 60px -10px hsl(var(--brand-primary) / 0.3);
@@ -85,7 +85,7 @@ All colors MUST be HSL.
     --popover: 25 25% 12%;
     --popover-foreground: 42 40% 92%;
 
-    --primary: 25 85% 60%;
+    --primary: 217 91% 60%;
     --primary-foreground: 25 25% 8%;
 
     --secondary: 25 15% 20%;
@@ -102,15 +102,15 @@ All colors MUST be HSL.
 
     --border: 25 15% 25%;
     --input: 25 15% 22%;
-    --ring: 25 85% 60%;
+    --ring: 217 91% 60%;
     --sidebar-background: 25 25% 10%;
     --sidebar-foreground: 42 40% 90%;
-    --sidebar-primary: 25 85% 55%;
+    --sidebar-primary: 217 91% 55%;
     --sidebar-primary-foreground: 25 25% 8%;
     --sidebar-accent: 25 15% 18%;
     --sidebar-accent-foreground: 42 40% 90%;
     --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 25 85% 60%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
