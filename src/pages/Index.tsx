@@ -27,9 +27,7 @@ const Index = () => {
           <div className="animate-fade-in" style={{
           animationDelay: "0.2s"
         }}>
-            <p className="text-2xl lg:text-4xl leading-relaxed font-sans text-muted-foreground">
-              Access India. Simply and Securely.
-            </p>
+            <p className="text-2xl lg:text-4xl leading-relaxed font-sans text-muted-foreground">Personal Assistant for Global Indians</p>
           </div>
         </div>
 
