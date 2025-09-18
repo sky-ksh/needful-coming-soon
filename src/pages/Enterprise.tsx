@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import TabNavigation from "@/components/TabNavigation";
 import Navigation from "@/components/Navigation";
 const Enterprise = () => {
   const { toast } = useToast();
@@ -77,7 +76,6 @@ const Enterprise = () => {
   };
   return (
     <div className="min-h-screen bg-gradient-background font-sans">
-      <TabNavigation />
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link

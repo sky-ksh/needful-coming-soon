@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import TabNavigation from "@/components/TabNavigation";
 
 const PlansAndPricing = () => {
   useEffect(() => {
@@ -58,9 +57,7 @@ const PlansAndPricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-muted/20">
-      <TabNavigation />
-      
+    <div className="min-h-screen bg-gradient-to-br from-background to-muted/20">      
       <main className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">

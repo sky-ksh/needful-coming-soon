@@ -4,7 +4,6 @@ import { ArrowLeft, FileText, HelpCircle, ExternalLink, BookOpen } from "lucide-
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { blogPosts, type BlogPost } from "@/data/blogPosts";
-import TabNavigation from "@/components/TabNavigation";
 const FAQ = () => {
   const guides = [{
     title: "Passport Surrender Guide",
@@ -46,7 +45,6 @@ const FAQ = () => {
   const featuredHrefs = ["/blog/vfs-monopoly-history", "/blog/goa-property-investment-risks", "/blog/ahmedabad-gift-city-investment"];
   const blogPostsPreview: BlogPost[] = featuredHrefs.map(href => blogPosts.find(p => p.href === href)).filter((p): p is BlogPost => Boolean(p));
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
-      <TabNavigation />
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">

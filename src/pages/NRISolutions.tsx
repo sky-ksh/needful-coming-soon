@@ -10,7 +10,6 @@ import { Globe, FileText, CreditCard, Building2, ArrowRight, Check, ArrowLeft } 
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import Navigation from "@/components/Navigation";
-import TabNavigation from "@/components/TabNavigation";
 const NRISolutions = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -107,7 +106,6 @@ const NRISolutions = () => {
     description: "Seamless bank account opening with our trusted banking partners"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
-      <TabNavigation />
       <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
