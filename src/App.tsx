@@ -29,6 +29,7 @@ import NRIBankingFAQ from "./pages/NRIBankingFAQ";
 import NRITaxesGuide from "./pages/NRITaxesGuide";
 import BangaloreStartupScene2025 from "./pages/blog/BangaloreStartupScene2025";
 import Unsubscribed from "./pages/Unsubscribed";
+import PlansAndPricing from "./pages/PlansAndPricing";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -39,6 +40,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/plans-pricing" element={<PlansAndPricing />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/nri-solutions" element={<NRISolutions />} />
             <Route path="/nri-beta" element={<NRIBeta />} />
