@@ -102,10 +102,10 @@ const PlansAndPricing = () => {
                 
                 <Button 
                   className="w-full" 
-                  variant={plan.popular ? "default" : "outline"}
+                  variant="outline"
                   size="lg"
                 >
-                  {plan.name === "Community" ? "Get Started" : "Choose Plan"}
+                  Get Started
                 </Button>
               </CardContent>
             </Card>
