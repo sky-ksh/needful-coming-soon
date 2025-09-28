@@ -18,39 +18,37 @@ const PlansAndPricing = () => {
       price: "Free",
       description: "Perfect for getting started",
       features: [
+        "WhatsApp-integrated AI Agent",
+        "Weekly newsletter",
         "Access to community guides",
-        "Basic FAQ resources",
-        "Email newsletter",
-        "Community forum access"
+        "Access to services* for additional fees"
       ],
       popular: false
     },
     {
-      name: "Premium",
-      price: "$29",
-      period: "/month",
-      description: "For individuals needing regular support",
+      name: "Dedicated",
+      price: "$500",
+      period: "/year",
+      description: "For individuals needing dedicated support",
       features: [
         "Everything in Community",
-        "Priority email support",
-        "Monthly expert consultations",
-        "Document review service",
-        "Tax filing guidance"
+        "Dedicated 24/7 Needful Concierge",
+        "Taxes, visas, and other document support",
+        "Ten 30-min consultations with Needful-vetted wealth or legal advisors",
+        "Weekly newsletter with proprietary insights and expert financial analysis"
       ],
       popular: true
     },
     {
-      name: "White Glove",
-      price: "$199",
-      period: "/month",
-      description: "Full-service assistance for complex needs",
+      name: "Platinum",
+      price: "$2,000",
+      period: "/year",
+      description: "Premium service for comprehensive needs",
       features: [
-        "Everything in Premium",
-        "Dedicated account manager",
-        "On-demand phone support",
-        "Document preparation service",
-        "Banking setup assistance",
-        "Property transaction support"
+        "Everything in Dedicated",
+        "Twenty 30-min consultations",
+        "Dedicated property and inheritance management",
+        "Elder care"
       ],
       popular: false
     }
